@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.poo.progra2.ActivitiesAsesor.AsesorActivity;
 import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
 
 public class LogInActivity extends AppCompatActivity {
@@ -16,6 +17,6 @@ public class LogInActivity extends AppCompatActivity {
     }
 
     public void abrirMenuPracticante(View v){
-        startActivity(new Intent(LogInActivity.this, PracticanteActivity.class));
+        startActivity(new Intent(LogInActivity.this, AsesorActivity.class));
     }
 }

@@ -11,20 +11,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
-import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
 import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
 import com.example.poo.progra2.R;
 
-public class AsesorActivity extends AppCompatActivity {
+public class AsignarNotaActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_asesor);
-        toolbar = findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_asignar_nota);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
@@ -39,14 +37,14 @@ public class AsesorActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
-                            case R.id.nav_calendario:
-                                startActivity(new Intent(AsesorActivity.this,CalendarioAsesorActivity.class));
+                            case R.id.nav_inicio:
+                                startActivity(new Intent(AsignarNotaActivity.this,AsesorActivity.class));
                                 break;
                             case R.id.nav_entregable:
-                                startActivity(new Intent(AsesorActivity.this, RegistrarEntregableActivity.class ));
+                                startActivity(new Intent(AsignarNotaActivity.this, RegistrarEntregableActivity.class ));
                                 break;
                             case R.id.nav_minuta:
-                                startActivity(new Intent(AsesorActivity.this, MinutaActivity.class));
+                                startActivity(new Intent(AsignarNotaActivity.this, MinutaActivity.class));
                         }
                         return true;
                     }

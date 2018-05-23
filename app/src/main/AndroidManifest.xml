@@ -36,7 +36,8 @@
             android:name=".ActivitiesPracticante.MinutaActivity"
             android:label="Crear minuta de reunión" />
         <activity android:name=".ActivitiesAsesor.AsesorActivity" />
-        <activity android:name=".ActivitiesAsesor.CalendarioAsesorActivity"></activity>
+        <activity android:name=".ActivitiesAsesor.CalendarioAsesorActivity" />
+        <activity android:name=".ActivitiesAsesor.AsignarNotaActivity"></activity>
     </application>
 
 </manifest>
