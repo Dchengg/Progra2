@@ -1,4 +1,4 @@
-package com.example.poo.progra2;
+package com.example.poo.progra2.ActivitiesPracticante;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,15 +10,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-public class MinutaActivity extends AppCompatActivity {
+import com.example.poo.progra2.R;
+
+public class PracticanteActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_minuta);
+        setContentView(R.layout.activity_practicante);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -34,18 +36,19 @@ public class MinutaActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
-                            case R.id.nav_inicio:
-                                startActivity(new Intent(MinutaActivity.this,PracticanteActivity.class));
-                                break;
                             case R.id.nav_entregable:
-                                startActivity(new Intent(MinutaActivity.this, RegistrarEntregableActivity.class ));
+                                startActivity(new Intent(PracticanteActivity.this,RegistrarEntregableActivity.class));
                                 break;
                             case R.id.nav_calendario:
-                                startActivity(new Intent(MinutaActivity.this, CalendarioActivity.class));
+                                startActivity(new Intent(PracticanteActivity.this, CalendarioPracticanteActivity.class ));
+                                break;
+                            case R.id.nav_minuta:
+                                startActivity(new Intent(PracticanteActivity.this, MinutaActivity.class));
                         }
                         return true;
                     }
                 });
+
     }
 
     @Override
@@ -59,4 +62,5 @@ public class MinutaActivity extends AppCompatActivity {
         }
         return true;
     }
+
 }

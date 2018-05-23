@@ -1,4 +1,4 @@
-package com.example.poo.progra2;
+package com.example.poo.progra2.ActivitiesPracticante;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,7 +10,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-public class RegistrarEntregableActivity extends AppCompatActivity {
+import com.example.poo.progra2.R;
+
+public class CalendarioPracticanteActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
@@ -18,7 +20,7 @@ public class RegistrarEntregableActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registrar_entregable);
+        setContentView(R.layout.activity_calendario);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -35,13 +37,13 @@ public class RegistrarEntregableActivity extends AppCompatActivity {
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
                             case R.id.nav_inicio:
-                                startActivity(new Intent(RegistrarEntregableActivity.this,PracticanteActivity.class));
+                                startActivity(new Intent(CalendarioPracticanteActivity.this,PracticanteActivity.class));
                                 break;
-                            case R.id.nav_calendario:
-                                startActivity(new Intent(RegistrarEntregableActivity.this, CalendarioActivity.class ));
+                            case R.id.nav_entregable:
+                                startActivity(new Intent(CalendarioPracticanteActivity.this, RegistrarEntregableActivity.class ));
                                 break;
                             case R.id.nav_minuta:
-                                startActivity(new Intent(RegistrarEntregableActivity.this, MinutaActivity.class));
+                                startActivity(new Intent(CalendarioPracticanteActivity.this, MinutaActivity.class));
                         }
                         return true;
                     }

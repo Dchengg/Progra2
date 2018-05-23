@@ -1,7 +1,6 @@
-package com.example.poo.progra2;
+package com.example.poo.progra2.ActivitiesAsesor;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -10,9 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
 
-public class PracticanteActivity extends AppCompatActivity {
+import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
+import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
+import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
+import com.example.poo.progra2.R;
+
+public class CalendarioAsesorActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
@@ -20,7 +23,7 @@ public class PracticanteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_practicante);
+        setContentView(R.layout.activity_calendario_entregables);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -36,19 +39,18 @@ public class PracticanteActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
-                            case R.id.nav_entregable:
-                                startActivity(new Intent(PracticanteActivity.this,RegistrarEntregableActivity.class));
+                            case R.id.nav_inicio:
+                                startActivity(new Intent(CalendarioAsesorActivity.this,AsesorActivity.class));
                                 break;
-                            case R.id.nav_calendario:
-                                startActivity(new Intent(PracticanteActivity.this, CalendarioActivity.class ));
+                            case R.id.nav_entregable:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, RegistrarEntregableActivity.class ));
                                 break;
                             case R.id.nav_minuta:
-                                startActivity(new Intent(PracticanteActivity.this, MinutaActivity.class));
+                                startActivity(new Intent(CalendarioAsesorActivity.this, MinutaActivity.class));
                         }
                         return true;
                     }
                 });
-
     }
 
     @Override
@@ -62,5 +64,4 @@ public class PracticanteActivity extends AppCompatActivity {
         }
         return true;
     }
-
 }

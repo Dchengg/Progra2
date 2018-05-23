@@ -18,20 +18,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PracticanteActivity"
+            android:name=".ActivitiesPracticante.PracticanteActivity"
             android:label="Bienvenido Practicante"
-            app:fontFamily="@font/aldrich"/>
+            app:fontFamily="@font/aldrich" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".RegistrarEntregableActivity"
-            android:label="Registrar Entregables"/>
-        <activity android:name=".CalendarioActivity"
-            android:label="Consultar notas"/>
-        <activity android:name=".MinutaActivity"
-            android:label="Crear minuta de reunión"></activity>
+        <activity
+            android:name=".ActivitiesPracticante.RegistrarEntregableActivity"
+            android:label="Registrar Entregables" />
+        <activity
+            android:name=".ActivitiesPracticante.CalendarioPracticanteActivity"
+            android:label="Consultar notas" />
+        <activity
+            android:name=".ActivitiesPracticante.MinutaActivity"
+            android:label="Crear minuta de reunión" />
+        <activity android:name=".ActivitiesAsesor.AsesorActivity" />
+        <activity android:name=".ActivitiesAsesor.CalendarioAsesorActivity"></activity>
     </application>
 
 </manifest>
