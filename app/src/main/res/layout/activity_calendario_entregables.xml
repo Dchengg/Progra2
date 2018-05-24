@@ -87,7 +87,7 @@
         android:background="@color/colorAppBar"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        android:visibility="gone"
+        android:visibility="visible"
         app:menu="@menu/menu_asesor" />
 
 </android.support.v4.widget.DrawerLayout>

@@ -35,9 +35,18 @@
         <activity
             android:name=".ActivitiesPracticante.MinutaActivity"
             android:label="Crear minuta de reunión" />
-        <activity android:name=".ActivitiesAsesor.AsesorActivity" />
-        <activity android:name=".ActivitiesAsesor.CalendarioAsesorActivity" />
-        <activity android:name=".ActivitiesAsesor.AsignarNotaActivity"></activity>
+        <activity
+            android:name=".ActivitiesAsesor.AsesorActivity"
+            android:label="Bienvenido Profesor Asesor" />
+        <activity
+            android:name=".ActivitiesAsesor.CalendarioAsesorActivity"
+            android:label="Consultar calendario de entregables" />
+        <activity
+            android:name=".ActivitiesAsesor.AsignarNotaActivity"
+            android:label="Asignar nota a un entregable" />
+        <activity android:name=".ActivitiesAsesor.ConsultarEntregableActivity" />
+        <activity android:name=".ActivitiesAsesor.SolicitarReunionActivity" />
+        <activity android:name=".ActivitiesAsesor.ConsultarMinutasActivity"></activity>
     </application>
 
 </manifest>

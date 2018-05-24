@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/celestial"
+    android:background="@drawable/vine"
     android:fitsSystemWindows="true"
     android:visibility="visible"
     tools:openDrawer="start">
@@ -32,7 +32,7 @@
         android:background="@color/colorAppBar"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        android:visibility="gone"
+        android:visibility="visible"
         app:menu="@menu/menu_asesor" />
 
 </android.support.v4.widget.DrawerLayout>
