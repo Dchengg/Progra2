@@ -40,7 +40,7 @@
             android:label="Bienvenido Profesor Asesor" />
         <activity
             android:name=".ActivitiesAsesor.CalendarioAsesorActivity"
-            android:label="Consultar calendario de entregables" />
+            android:label="Consultar calendario" />
         <activity
             android:name=".ActivitiesAsesor.AsignarNotaActivity"
             android:label="Asignar nota a un entregable" />

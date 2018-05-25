@@ -42,11 +42,11 @@ public class AsesorActivity extends AppCompatActivity {
                             case R.id.nav_calendario:
                                 startActivity(new Intent(AsesorActivity.this,CalendarioAsesorActivity.class));
                                 break;
-                            case R.id.nav_entregable:
-                                startActivity(new Intent(AsesorActivity.this, RegistrarEntregableActivity.class ));
+                            case R.id.nav_asignar:
+                                startActivity(new Intent(AsesorActivity.this, AsignarNotaActivity.class ));
                                 break;
-                            case R.id.nav_minuta:
-                                startActivity(new Intent(AsesorActivity.this, MinutaActivity.class));
+                            case R.id.nav_consultarEntregables:
+                                startActivity(new Intent(AsesorActivity.this, ConsultarEntregableActivity.class));
                         }
                         return true;
                     }
