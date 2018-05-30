@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
 import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
 import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
+import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
+import com.example.poo.progra2.LogInActivity;
 import com.example.poo.progra2.R;
 
 public class AsesorActivity extends AppCompatActivity {
@@ -41,12 +43,27 @@ public class AsesorActivity extends AppCompatActivity {
                         switch (item.getItemId()){
                             case R.id.nav_calendario:
                                 startActivity(new Intent(AsesorActivity.this,CalendarioAsesorActivity.class));
+                                finish();
                                 break;
                             case R.id.nav_asignar:
                                 startActivity(new Intent(AsesorActivity.this, AsignarNotaActivity.class ));
+                                finish();
                                 break;
                             case R.id.nav_consultarEntregables:
                                 startActivity(new Intent(AsesorActivity.this, ConsultarEntregableActivity.class));
+                                finish();
+                                break;
+                            case R.id.nav_solicitar:
+                                startActivity(new Intent(AsesorActivity.this, SolicitarReunionActivity.class));
+                                finish();
+                                break;
+                            case R.id.nav_consultarMinutas:
+                                startActivity(new Intent(AsesorActivity.this, ConsultarMinutasActivity.class));
+                                finish();
+                                break;
+                            case R.id.nav_log_out:
+                                startActivity(new Intent(AsesorActivity.this, LogInActivity.class));
+                                break;
                         }
                         return true;
                     }

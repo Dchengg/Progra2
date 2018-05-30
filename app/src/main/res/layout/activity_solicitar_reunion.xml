@@ -193,9 +193,19 @@
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/transparent"
                 android:text="Solicitar"
-                tools:layout_editor_absoluteX="274dp"
-                tools:layout_editor_absoluteY="487dp" />
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.619"
+                app:layout_constraintStart_toEndOf="@+id/editText17"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.984" />
 
         </android.support.constraint.ConstraintLayout>
     </FrameLayout>
@@ -205,10 +215,11 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@color/colorAppBar"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         android:visibility="visible"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        app:itemTextColor="@android:color/white"
         app:menu="@menu/menu_asesor" />
 
 </android.support.v4.widget.DrawerLayout>

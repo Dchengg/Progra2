@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
 import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
 import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
+import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
+import com.example.poo.progra2.LogInActivity;
 import com.example.poo.progra2.R;
 
 public class CalendarioAsesorActivity extends AppCompatActivity {
@@ -42,11 +44,21 @@ public class CalendarioAsesorActivity extends AppCompatActivity {
                             case R.id.nav_inicio:
                                 startActivity(new Intent(CalendarioAsesorActivity.this,AsesorActivity.class));
                                 break;
-                            case R.id.nav_entregable:
-                                startActivity(new Intent(CalendarioAsesorActivity.this, RegistrarEntregableActivity.class ));
+                            case R.id.nav_asignar:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, AsignarNotaActivity.class ));
                                 break;
-                            case R.id.nav_minuta:
-                                startActivity(new Intent(CalendarioAsesorActivity.this, MinutaActivity.class));
+                            case R.id.nav_consultarEntregables:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, ConsultarEntregableActivity.class));
+                                break;
+                            case R.id.nav_solicitar:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, SolicitarReunionActivity.class));
+                                break;
+                            case R.id.nav_consultarMinutas:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, ConsultarMinutasActivity.class));
+                                break;
+                            case R.id.nav_log_out:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, LogInActivity.class));
+                                break;
                         }
                         return true;
                     }

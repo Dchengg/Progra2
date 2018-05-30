@@ -79,6 +79,14 @@
                     android:inputType="time" />
 
                 <EditText
+                    android:id="@+id/editText18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Hora de finalización"
+                    android:inputType="time" />
+
+                <EditText
                     android:id="@+id/editText16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -101,10 +109,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="28dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/transparent"
                 android:text="Adjuntar imagen"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -120,10 +127,11 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@color/colorAppBar"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         android:visibility="visible"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        app:itemTextColor="@android:color/white"
         app:menu="@menu/menu_practicantes" />
 
 </android.support.v4.widget.DrawerLayout>

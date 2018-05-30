@@ -10,8 +10,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
-import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
+
+import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
+import com.example.poo.progra2.LogInActivity;
 import com.example.poo.progra2.R;
 
 public class AsignarNotaActivity extends AppCompatActivity {
@@ -23,6 +24,7 @@ public class AsignarNotaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_asignar_nota);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
@@ -37,14 +39,24 @@ public class AsignarNotaActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
+                            case R.id.nav_calendario:
+                                startActivity(new Intent(AsignarNotaActivity.this,CalendarioAsesorActivity.class));
+                                break;
                             case R.id.nav_inicio:
-                                startActivity(new Intent(AsignarNotaActivity.this,AsesorActivity.class));
+                                startActivity(new Intent(AsignarNotaActivity.this, AsesorActivity.class ));
                                 break;
-                            case R.id.nav_entregable:
-                                startActivity(new Intent(AsignarNotaActivity.this, RegistrarEntregableActivity.class ));
+                            case R.id.nav_consultarEntregables:
+                                startActivity(new Intent(AsignarNotaActivity.this, ConsultarEntregableActivity.class));
                                 break;
-                            case R.id.nav_minuta:
-                                startActivity(new Intent(AsignarNotaActivity.this, MinutaActivity.class));
+                            case R.id.nav_solicitar:
+                                startActivity(new Intent(AsignarNotaActivity.this, SolicitarReunionActivity.class));
+                                break;
+                            case R.id.nav_consultarMinutas:
+                                startActivity(new Intent(AsignarNotaActivity.this, ConsultarMinutasActivity.class));
+                                break;
+                            case R.id.nav_log_out:
+                                startActivity(new Intent(AsignarNotaActivity.this, LogInActivity.class));
+                                break;
                         }
                         return true;
                     }

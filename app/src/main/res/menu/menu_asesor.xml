@@ -24,5 +24,9 @@
             android:id="@+id/nav_consultarMinutas"
             android:title="Consultar minutas"
             />
+        <item
+            android:id="@+id/nav_log_out"
+            android:title="Salir"
+            />
     </group>
 </menu>

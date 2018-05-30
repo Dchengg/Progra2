@@ -59,30 +59,28 @@
             <ScrollView
                 android:id="@+id/scrollView3"
                 android:layout_width="368dp"
-                android:layout_height="390dp"
+                android:layout_height="364dp"
                 android:layout_marginBottom="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:fillViewport="false"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.745">
+                app:layout_constraintVertical_bias="0.575">
 
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:stretchColumns="1"
                     tools:layout_editor_absoluteX="72dp"
                     tools:layout_editor_absoluteY="219dp">
-                    android:stretchColumns="1">
 
-                    <TableRow>
+                    <TableRow android:minHeight="100px">
 
                         <TextView
                             android:layout_width="174dp"
@@ -105,7 +103,7 @@
                             app:fontFamily="@font/aldrich" />
                     </TableRow>
 
-                    <TableRow>
+                    <TableRow android:minHeight="100px">
 
                         <TextView
                             android:layout_gravity="center"
@@ -121,7 +119,7 @@
                             android:gravity="right" />
                     </TableRow>
 
-                    <TableRow>
+                    <TableRow android:minHeight="100px">
 
                         <TextView
                             android:layout_gravity="center"
@@ -143,13 +141,10 @@
                 android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
                 android:text="Enviar"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
@@ -158,7 +153,7 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-                app:layout_constraintVertical_bias="0.888" />
+                app:layout_constraintVertical_bias="0.0" />
 
 
         </android.support.constraint.ConstraintLayout>
@@ -171,9 +166,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorAppBar"
         android:fitsSystemWindows="true"
         android:visibility="visible"
-        app:menu="@menu/menu_asesor" />
+        app:menu="@menu/menu_asesor"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        app:itemTextColor="@android:color/white"/>
 
 </android.support.v4.widget.DrawerLayout>

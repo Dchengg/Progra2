@@ -5,11 +5,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/appicon"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:label="PrograPOO2"
+        android:theme="@style/AppTheme"
+        app:fontFamily="@font/aldrich">
+
         <activity android:name=".LogInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,8 +21,7 @@
         </activity>
         <activity
             android:name=".ActivitiesPracticante.PracticanteActivity"
-            android:label="Bienvenido Practicante"
-            app:fontFamily="@font/aldrich" />
+            android:label="Bienvenido Practicante" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -44,9 +45,34 @@
         <activity
             android:name=".ActivitiesAsesor.AsignarNotaActivity"
             android:label="Asignar nota a un entregable" />
-        <activity android:name=".ActivitiesAsesor.ConsultarEntregableActivity" />
-        <activity android:name=".ActivitiesAsesor.SolicitarReunionActivity" />
-        <activity android:name=".ActivitiesAsesor.ConsultarMinutasActivity"></activity>
+        <activity android:name=".ActivitiesAsesor.ConsultarEntregableActivity"
+            android:label="Consultar entregable"/>
+        <activity android:name=".ActivitiesAsesor.SolicitarReunionActivity"
+            android:label="Solicitar reunión"/>
+        <activity android:name=".ActivitiesAsesor.ConsultarMinutasActivity"
+            android:label="Consultar minutas"></activity>
+        <activity android:name=".ActivitiesEncargado.RegistrarAsesor"
+            android:label="Consultar minutas"/>
+        <activity android:name=".ActivitiesEncargado.EncargadoActivity"
+            android:label="Bievenido Encargado"/>
+        <activity android:name=".ActivitiesEncargado.RegistrarProfCursoActivity"
+            android:label="Registrar profesor de curso"/>
+        <activity android:name=".ActivitiesEncargado.RegistrarPeriodoActivity"
+            android:label="Registrar periodo"/>
+        <activity android:name=".ActivitiesEncargado.RegistrarEmpresaActivity"
+            android:label="Registrar empresa"/>
+        <activity android:name=".ActivitiesEncargado.RegistrarPracticanteActivity"
+            android:label="Registrar practicante"/>
+        <activity android:name=".ActivitiesEncargado.CrearCalendarioActivity"
+            android:label="Crear calendario"/>
+        <activity android:name=".ActivitiesProfCurso.AsignarNotaProfCursoActivity"
+            android:label="Asignar nota"/>
+        <activity android:name=".ActivitiesProfCurso.ConsultarDatosActivity"
+            android:label="Consultar practicante"/>
+        <activity android:name=".ActivitiesProfCurso.ConsultarNotasFinales"
+            android:label="Consultar notas finales"/>
+        <activity android:name=".ActivitiesProfCurso.PCursoActivity"
+            android:label="Bievenido Profesor de Curso"></activity>
     </application>
 
 </manifest>

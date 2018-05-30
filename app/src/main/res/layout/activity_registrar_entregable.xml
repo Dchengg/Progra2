@@ -53,8 +53,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginEnd="4dp"
-                android:layout_marginRight="4dp"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/transparent"
                 android:text="Adjuntar archivo"
                 app:layout_constraintBottom_toTopOf="@+id/editText2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +71,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="@android:color/transparent"
                 android:text="Enviar"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -85,10 +86,11 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@color/colorAppBar"
         android:layout_gravity="start"
         android:visibility="visible"
         android:fitsSystemWindows="true"
-        app:menu="@menu/menu_practicantes" />
+        app:menu="@menu/menu_practicantes"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        app:itemTextColor="@android:color/white"/>
 
 </android.support.v4.widget.DrawerLayout>

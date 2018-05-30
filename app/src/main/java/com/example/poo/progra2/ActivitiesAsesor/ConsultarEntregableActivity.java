@@ -12,6 +12,8 @@ import android.view.MenuItem;
 
 import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
 import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
+import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
+import com.example.poo.progra2.LogInActivity;
 import com.example.poo.progra2.R;
 
 public class ConsultarEntregableActivity extends AppCompatActivity {
@@ -38,14 +40,24 @@ public class ConsultarEntregableActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
+                            case R.id.nav_calendario:
+                                startActivity(new Intent(ConsultarEntregableActivity.this,CalendarioAsesorActivity.class));
+                                break;
+                            case R.id.nav_asignar:
+                                startActivity(new Intent(ConsultarEntregableActivity.this, AsignarNotaActivity.class ));
+                                break;
                             case R.id.nav_inicio:
-                                startActivity(new Intent(ConsultarEntregableActivity.this,AsesorActivity.class));
+                                startActivity(new Intent(ConsultarEntregableActivity.this, AsesorActivity.class));
                                 break;
-                            case R.id.nav_entregable:
-                                startActivity(new Intent(ConsultarEntregableActivity.this, RegistrarEntregableActivity.class ));
+                            case R.id.nav_solicitar:
+                                startActivity(new Intent(ConsultarEntregableActivity.this, SolicitarReunionActivity.class));
                                 break;
-                            case R.id.nav_minuta:
-                                startActivity(new Intent(ConsultarEntregableActivity.this, MinutaActivity.class));
+                            case R.id.nav_consultarMinutas:
+                                startActivity(new Intent(ConsultarEntregableActivity.this, ConsultarMinutasActivity.class));
+                                break;
+                            case R.id.nav_log_out:
+                                startActivity(new Intent(ConsultarEntregableActivity.this, LogInActivity.class));
+                                break;
                         }
                         return true;
                     }
