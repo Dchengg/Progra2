@@ -1,27 +1,28 @@
-package com.example.poo.progra2.ActivitiesProfCurso;
+package com.example.poo.progra2.View.ActivitiesAsesor;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
-import com.example.poo.progra2.LogInActivity;
+
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class AsignarNotaProfCursoActivity extends AppCompatActivity {
+public class AsignarNotaActivity extends AppCompatActivity {
+
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_asignar_nota_curso);
+        setContentView(R.layout.activity_asignar_nota);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -36,20 +37,25 @@ public class AsignarNotaProfCursoActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem item) {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
-                        switch (item.getItemId()) {
-                            case R.id.nav_inicio1:
-                                startActivity(new Intent(AsignarNotaProfCursoActivity.this, PCursoActivity.class));
+                        switch (item.getItemId()){
+                            case R.id.nav_calendario:
+                                startActivity(new Intent(AsignarNotaActivity.this,CalendarioAsesorActivity.class));
                                 break;
-                            case R.id.nav_reporteNotas:
-                                startActivity(new Intent(AsignarNotaProfCursoActivity.this, ConsultarNotasFinales.class));
+                            case R.id.nav_inicio:
+                                startActivity(new Intent(AsignarNotaActivity.this, AsesorActivity.class ));
                                 break;
-                            case R.id.nav_datosPracticante:
-                                startActivity(new Intent(AsignarNotaProfCursoActivity.this, ConsultarDatosActivity.class));
+                            case R.id.nav_consultarEntregables:
+                                startActivity(new Intent(AsignarNotaActivity.this, ConsultarEntregableActivity.class));
+                                break;
+                            case R.id.nav_solicitar:
+                                startActivity(new Intent(AsignarNotaActivity.this, SolicitarReunionActivity.class));
+                                break;
+                            case R.id.nav_consultarMinutas:
+                                startActivity(new Intent(AsignarNotaActivity.this, ConsultarMinutasActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(AsignarNotaProfCursoActivity.this, LogInActivity.class));
+                                startActivity(new Intent(AsignarNotaActivity.this, LogInActivity.class));
                                 break;
-
                         }
                         return true;
                     }

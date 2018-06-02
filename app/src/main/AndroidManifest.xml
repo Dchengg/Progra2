@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         app:fontFamily="@font/aldrich">
 
-        <activity android:name=".LogInActivity">
+        <activity android:name=".View.LogInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivitiesPracticante.PracticanteActivity"
+            android:name=".View.ActivitiesPracticante.PracticanteActivity"
             android:label="Bienvenido Practicante" />
 
         <meta-data
@@ -28,50 +28,50 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".ActivitiesPracticante.RegistrarEntregableActivity"
+            android:name=".View.ActivitiesPracticante.RegistrarEntregableActivity"
             android:label="Registrar Entregables" />
         <activity
-            android:name=".ActivitiesPracticante.CalendarioPracticanteActivity"
+            android:name=".View.ActivitiesPracticante.CalendarioPracticanteActivity"
             android:label="Consultar notas" />
         <activity
-            android:name=".ActivitiesPracticante.MinutaActivity"
+            android:name=".View.ActivitiesPracticante.MinutaActivity"
             android:label="Crear minuta de reunión" />
         <activity
-            android:name=".ActivitiesAsesor.AsesorActivity"
+            android:name=".View.ActivitiesAsesor.AsesorActivity"
             android:label="Bienvenido Profesor Asesor" />
         <activity
-            android:name=".ActivitiesAsesor.CalendarioAsesorActivity"
+            android:name=".View.ActivitiesAsesor.CalendarioAsesorActivity"
             android:label="Consultar calendario" />
         <activity
-            android:name=".ActivitiesAsesor.AsignarNotaActivity"
+            android:name=".View.ActivitiesAsesor.AsignarNotaActivity"
             android:label="Asignar nota a un entregable" />
-        <activity android:name=".ActivitiesAsesor.ConsultarEntregableActivity"
+        <activity android:name=".View.ActivitiesAsesor.ConsultarEntregableActivity"
             android:label="Consultar entregable"/>
-        <activity android:name=".ActivitiesAsesor.SolicitarReunionActivity"
+        <activity android:name=".View.ActivitiesAsesor.SolicitarReunionActivity"
             android:label="Solicitar reunión"/>
-        <activity android:name=".ActivitiesAsesor.ConsultarMinutasActivity"
+        <activity android:name=".View.ActivitiesAsesor.ConsultarMinutasActivity"
             android:label="Consultar minutas"></activity>
-        <activity android:name=".ActivitiesEncargado.RegistrarAsesor"
+        <activity android:name=".View.ActivitiesEncargado.RegistrarAsesor"
             android:label="Consultar minutas"/>
-        <activity android:name=".ActivitiesEncargado.EncargadoActivity"
+        <activity android:name=".View.ActivitiesEncargado.EncargadoActivity"
             android:label="Bievenido Encargado"/>
-        <activity android:name=".ActivitiesEncargado.RegistrarProfCursoActivity"
+        <activity android:name=".View.ActivitiesEncargado.RegistrarProfCursoActivity"
             android:label="Registrar profesor de curso"/>
-        <activity android:name=".ActivitiesEncargado.RegistrarPeriodoActivity"
+        <activity android:name=".View.ActivitiesEncargado.RegistrarPeriodoActivity"
             android:label="Registrar periodo"/>
-        <activity android:name=".ActivitiesEncargado.RegistrarEmpresaActivity"
+        <activity android:name=".View.ActivitiesEncargado.RegistrarEmpresaActivity"
             android:label="Registrar empresa"/>
-        <activity android:name=".ActivitiesEncargado.RegistrarPracticanteActivity"
+        <activity android:name=".View.ActivitiesEncargado.RegistrarPracticanteActivity"
             android:label="Registrar practicante"/>
-        <activity android:name=".ActivitiesEncargado.CrearCalendarioActivity"
+        <activity android:name=".View.ActivitiesEncargado.CrearCalendarioActivity"
             android:label="Crear calendario"/>
-        <activity android:name=".ActivitiesProfCurso.AsignarNotaProfCursoActivity"
+        <activity android:name=".View.ActivitiesProfCurso.AsignarNotaProfCursoActivity"
             android:label="Asignar nota"/>
-        <activity android:name=".ActivitiesProfCurso.ConsultarDatosActivity"
+        <activity android:name=".View.ActivitiesProfCurso.ConsultarDatosActivity"
             android:label="Consultar practicante"/>
-        <activity android:name=".ActivitiesProfCurso.ConsultarNotasFinales"
+        <activity android:name=".View.ActivitiesProfCurso.ConsultarNotasFinales"
             android:label="Consultar notas finales"/>
-        <activity android:name=".ActivitiesProfCurso.PCursoActivity"
+        <activity android:name=".View.ActivitiesProfCurso.PCursoActivity"
             android:label="Bievenido Profesor de Curso"></activity>
     </application>
 

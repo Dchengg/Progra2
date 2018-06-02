@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesAsesor;
+package com.example.poo.progra2.View.ActivitiesEncargado;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,21 +10,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
-import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
-import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class ConsultarEntregableActivity extends AppCompatActivity {
-
+public class RegistrarPeriodoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consultar_entregable);
+        setContentView(R.layout.activity_registrar_periodo);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -39,24 +35,27 @@ public class ConsultarEntregableActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem item) {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
-                        switch (item.getItemId()){
-                            case R.id.nav_calendario:
-                                startActivity(new Intent(ConsultarEntregableActivity.this,CalendarioAsesorActivity.class));
-                                break;
-                            case R.id.nav_asignar:
-                                startActivity(new Intent(ConsultarEntregableActivity.this, AsignarNotaActivity.class ));
-                                break;
+                        switch (item.getItemId()) {
                             case R.id.nav_inicio:
-                                startActivity(new Intent(ConsultarEntregableActivity.this, AsesorActivity.class));
+                                startActivity(new Intent(RegistrarPeriodoActivity.this, EncargadoActivity.class));
                                 break;
-                            case R.id.nav_solicitar:
-                                startActivity(new Intent(ConsultarEntregableActivity.this, SolicitarReunionActivity.class));
+                            case R.id.nav_profA:
+                                startActivity(new Intent(RegistrarPeriodoActivity.this, RegistrarAsesor.class));
                                 break;
-                            case R.id.nav_consultarMinutas:
-                                startActivity(new Intent(ConsultarEntregableActivity.this, ConsultarMinutasActivity.class));
+                            case R.id.nav_empresa:
+                                startActivity(new Intent(RegistrarPeriodoActivity.this, RegistrarEmpresaActivity.class));
+                                break;
+                            case R.id.nav_profC:
+                                startActivity(new Intent(RegistrarPeriodoActivity.this, RegistrarProfCursoActivity.class));
+                                break;
+                            case R.id.nav_practicante:
+                                startActivity(new Intent(RegistrarPeriodoActivity.this, RegistrarPracticanteActivity.class));
+                                break;
+                            case R.id.nav_calendario:
+                                startActivity(new Intent(RegistrarPeriodoActivity.this, CrearCalendarioActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(ConsultarEntregableActivity.this, LogInActivity.class));
+                                startActivity(new Intent(RegistrarPeriodoActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;

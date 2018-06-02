@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesProfCurso;
+package com.example.poo.progra2.View.ActivitiesProfCurso;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,8 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
 public class ConsultarDatosActivity extends AppCompatActivity {

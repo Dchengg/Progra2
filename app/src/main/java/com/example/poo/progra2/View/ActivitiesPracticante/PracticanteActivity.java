@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesAsesor;
+package com.example.poo.progra2.View.ActivitiesPracticante;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,14 +10,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
-import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
-import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
-import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class AsesorActivity extends AppCompatActivity {
+public class PracticanteActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
@@ -25,7 +21,7 @@ public class AsesorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_asesor);
+        setContentView(R.layout.activity_practicante);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -41,33 +37,23 @@ public class AsesorActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
+                            case R.id.nav_entregable:
+                                startActivity(new Intent(PracticanteActivity.this,RegistrarEntregableActivity.class));
+                                break;
                             case R.id.nav_calendario:
-                                startActivity(new Intent(AsesorActivity.this,CalendarioAsesorActivity.class));
-                                finish();
+                                startActivity(new Intent(PracticanteActivity.this, CalendarioPracticanteActivity.class ));
                                 break;
-                            case R.id.nav_asignar:
-                                startActivity(new Intent(AsesorActivity.this, AsignarNotaActivity.class ));
-                                finish();
-                                break;
-                            case R.id.nav_consultarEntregables:
-                                startActivity(new Intent(AsesorActivity.this, ConsultarEntregableActivity.class));
-                                finish();
-                                break;
-                            case R.id.nav_solicitar:
-                                startActivity(new Intent(AsesorActivity.this, SolicitarReunionActivity.class));
-                                finish();
-                                break;
-                            case R.id.nav_consultarMinutas:
-                                startActivity(new Intent(AsesorActivity.this, ConsultarMinutasActivity.class));
-                                finish();
+                            case R.id.nav_minuta:
+                                startActivity(new Intent(PracticanteActivity.this, MinutaActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(AsesorActivity.this, LogInActivity.class));
+                                startActivity(new Intent(PracticanteActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;
                     }
                 });
+
     }
 
     @Override
@@ -81,4 +67,5 @@ public class AsesorActivity extends AppCompatActivity {
         }
         return true;
     }
+
 }

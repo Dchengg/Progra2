@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesEncargado;
+package com.example.poo.progra2.View.ActivitiesEncargado;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,18 +10,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class RegistrarPracticanteActivity extends AppCompatActivity {
+public class CrearCalendarioActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registrar_practicante);
+        setContentView(R.layout.activity_crear_calendario);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -38,25 +37,28 @@ public class RegistrarPracticanteActivity extends AppCompatActivity {
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()) {
                             case R.id.nav_inicio:
-                                startActivity(new Intent(RegistrarPracticanteActivity.this, EncargadoActivity.class));
+                                startActivity(new Intent(CrearCalendarioActivity.this, EncargadoActivity.class));
                                 break;
                             case R.id.nav_profA:
-                                startActivity(new Intent(RegistrarPracticanteActivity.this, RegistrarAsesor.class));
+                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarAsesor.class));
                                 break;
                             case R.id.nav_empresa:
-                                startActivity(new Intent(RegistrarPracticanteActivity.this, RegistrarEmpresaActivity.class));
+                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarEmpresaActivity.class));
                                 break;
                             case R.id.nav_profC:
-                                startActivity(new Intent(RegistrarPracticanteActivity.this, RegistrarProfCursoActivity.class));
+                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarProfCursoActivity.class));
                                 break;
                             case R.id.nav_periodo:
-                                startActivity(new Intent(RegistrarPracticanteActivity.this, RegistrarPeriodoActivity.class));
+                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarPeriodoActivity.class));
+                                break;
+                            case R.id.nav_practicante:
+                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarPeriodoActivity.class));
                                 break;
                             case R.id.nav_calendario:
-                                startActivity(new Intent(RegistrarPracticanteActivity.this, CrearCalendarioActivity.class));
+                                startActivity(new Intent(CrearCalendarioActivity.this, CrearCalendarioActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(RegistrarPracticanteActivity.this, LogInActivity.class));
+                                startActivity(new Intent(CrearCalendarioActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;

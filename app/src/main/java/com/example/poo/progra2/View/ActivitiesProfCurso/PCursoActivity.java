@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesPracticante;
+package com.example.poo.progra2.View.ActivitiesProfCurso;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,18 +10,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class PracticanteActivity extends AppCompatActivity {
-
+public class PCursoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_practicante);
+        setContentView(R.layout.activity_pcurso);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -36,24 +35,23 @@ public class PracticanteActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem item) {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
-                        switch (item.getItemId()){
-                            case R.id.nav_entregable:
-                                startActivity(new Intent(PracticanteActivity.this,RegistrarEntregableActivity.class));
+                        switch (item.getItemId()) {
+                            case R.id.nav_reporteNotas:
+                                startActivity(new Intent(PCursoActivity.this, ConsultarNotasFinales.class));
                                 break;
-                            case R.id.nav_calendario:
-                                startActivity(new Intent(PracticanteActivity.this, CalendarioPracticanteActivity.class ));
+                            case R.id.nav_datosPracticante:
+                                startActivity(new Intent(PCursoActivity.this, ConsultarDatosActivity.class));
                                 break;
-                            case R.id.nav_minuta:
-                                startActivity(new Intent(PracticanteActivity.this, MinutaActivity.class));
+                            case R.id.nav_asignarNota:
+                                startActivity(new Intent(PCursoActivity.this, AsignarNotaProfCursoActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(PracticanteActivity.this, LogInActivity.class));
+                                startActivity(new Intent(PCursoActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;
                     }
                 });
-
     }
 
     @Override
@@ -67,5 +65,4 @@ public class PracticanteActivity extends AppCompatActivity {
         }
         return true;
     }
-
 }

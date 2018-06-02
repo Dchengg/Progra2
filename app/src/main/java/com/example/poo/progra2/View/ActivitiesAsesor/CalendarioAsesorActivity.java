@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesEncargado;
+package com.example.poo.progra2.View.ActivitiesAsesor;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,18 +10,18 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class CrearCalendarioActivity extends AppCompatActivity {
+public class CalendarioAsesorActivity extends AppCompatActivity {
+
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_crear_calendario);
+        setContentView(R.layout.activity_calendario_entregables);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -36,30 +36,24 @@ public class CrearCalendarioActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem item) {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
-                        switch (item.getItemId()) {
+                        switch (item.getItemId()){
                             case R.id.nav_inicio:
-                                startActivity(new Intent(CrearCalendarioActivity.this, EncargadoActivity.class));
+                                startActivity(new Intent(CalendarioAsesorActivity.this,AsesorActivity.class));
                                 break;
-                            case R.id.nav_profA:
-                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarAsesor.class));
+                            case R.id.nav_asignar:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, AsignarNotaActivity.class ));
                                 break;
-                            case R.id.nav_empresa:
-                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarEmpresaActivity.class));
+                            case R.id.nav_consultarEntregables:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, ConsultarEntregableActivity.class));
                                 break;
-                            case R.id.nav_profC:
-                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarProfCursoActivity.class));
+                            case R.id.nav_solicitar:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, SolicitarReunionActivity.class));
                                 break;
-                            case R.id.nav_periodo:
-                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarPeriodoActivity.class));
-                                break;
-                            case R.id.nav_practicante:
-                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarPeriodoActivity.class));
-                                break;
-                            case R.id.nav_calendario:
-                                startActivity(new Intent(CrearCalendarioActivity.this, CrearCalendarioActivity.class));
+                            case R.id.nav_consultarMinutas:
+                                startActivity(new Intent(CalendarioAsesorActivity.this, ConsultarMinutasActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(CrearCalendarioActivity.this, LogInActivity.class));
+                                startActivity(new Intent(CalendarioAsesorActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;

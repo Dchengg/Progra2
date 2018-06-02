@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesAsesor;
+package com.example.poo.progra2.View.ActivitiesEncargado;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,22 +10,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
-import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
-import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
-import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class CalendarioAsesorActivity extends AppCompatActivity {
-
+public class RegistrarEmpresaActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendario_entregables);
+        setContentView(R.layout.activity_registrar_empresa);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -40,24 +35,27 @@ public class CalendarioAsesorActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem item) {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
-                        switch (item.getItemId()){
+                        switch (item.getItemId()) {
                             case R.id.nav_inicio:
-                                startActivity(new Intent(CalendarioAsesorActivity.this,AsesorActivity.class));
+                                startActivity(new Intent(RegistrarEmpresaActivity.this, EncargadoActivity.class));
                                 break;
-                            case R.id.nav_asignar:
-                                startActivity(new Intent(CalendarioAsesorActivity.this, AsignarNotaActivity.class ));
+                            case R.id.nav_profA:
+                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarAsesor.class));
                                 break;
-                            case R.id.nav_consultarEntregables:
-                                startActivity(new Intent(CalendarioAsesorActivity.this, ConsultarEntregableActivity.class));
+                            case R.id.nav_profC:
+                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarProfCursoActivity.class));
                                 break;
-                            case R.id.nav_solicitar:
-                                startActivity(new Intent(CalendarioAsesorActivity.this, SolicitarReunionActivity.class));
+                            case R.id.nav_periodo:
+                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarPeriodoActivity.class));
                                 break;
-                            case R.id.nav_consultarMinutas:
-                                startActivity(new Intent(CalendarioAsesorActivity.this, ConsultarMinutasActivity.class));
+                            case R.id.nav_practicante:
+                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarPracticanteActivity.class));
+                                break;
+                            case R.id.nav_calendario:
+                                startActivity(new Intent(RegistrarEmpresaActivity.this, CrearCalendarioActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(CalendarioAsesorActivity.this, LogInActivity.class));
+                                startActivity(new Intent(RegistrarEmpresaActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;

@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesProfCurso;
+package com.example.poo.progra2.View.ActivitiesEncargado;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,18 +10,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-
-public class ConsultarNotasFinales extends AppCompatActivity {
+public class EncargadoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consultar_notas_finales);
+        setContentView(R.layout.activity_encargado);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -37,17 +36,26 @@ public class ConsultarNotasFinales extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()) {
-                            case R.id.nav_inicio1:
-                                startActivity(new Intent(ConsultarNotasFinales.this, PCursoActivity.class));
+                            case R.id.nav_profA:
+                                startActivity(new Intent(EncargadoActivity.this, RegistrarAsesor.class));
                                 break;
-                            case R.id.nav_datosPracticante:
-                                startActivity(new Intent(ConsultarNotasFinales.this, ConsultarDatosActivity.class));
+                            case R.id.nav_empresa:
+                                startActivity(new Intent(EncargadoActivity.this, RegistrarEmpresaActivity.class));
                                 break;
-                            case R.id.nav_asignarNota:
-                                startActivity(new Intent(ConsultarNotasFinales.this, AsignarNotaProfCursoActivity.class));
+                            case R.id.nav_profC:
+                                startActivity(new Intent(EncargadoActivity.this, RegistrarProfCursoActivity.class));
+                                break;
+                            case R.id.nav_periodo:
+                                startActivity(new Intent(EncargadoActivity.this, RegistrarPeriodoActivity.class));
+                                break;
+                            case R.id.nav_practicante:
+                                startActivity(new Intent(EncargadoActivity.this, RegistrarPracticanteActivity.class));
+                                break;
+                            case R.id.nav_calendario:
+                                startActivity(new Intent(EncargadoActivity.this, CrearCalendarioActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(ConsultarNotasFinales.this, LogInActivity.class));
+                                startActivity(new Intent(EncargadoActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;

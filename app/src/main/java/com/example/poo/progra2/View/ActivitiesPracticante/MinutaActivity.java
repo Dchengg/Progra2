@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesEncargado;
+package com.example.poo.progra2.View.ActivitiesPracticante;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,18 +10,18 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class RegistrarEmpresaActivity extends AppCompatActivity {
+public class MinutaActivity extends AppCompatActivity {
+
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registrar_empresa);
+        setContentView(R.layout.activity_minuta);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -36,27 +36,18 @@ public class RegistrarEmpresaActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem item) {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
-                        switch (item.getItemId()) {
+                        switch (item.getItemId()){
                             case R.id.nav_inicio:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, EncargadoActivity.class));
+                                startActivity(new Intent(MinutaActivity.this,PracticanteActivity.class));
                                 break;
-                            case R.id.nav_profA:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarAsesor.class));
-                                break;
-                            case R.id.nav_profC:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarProfCursoActivity.class));
-                                break;
-                            case R.id.nav_periodo:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarPeriodoActivity.class));
-                                break;
-                            case R.id.nav_practicante:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarPracticanteActivity.class));
+                            case R.id.nav_entregable:
+                                startActivity(new Intent(MinutaActivity.this, RegistrarEntregableActivity.class ));
                                 break;
                             case R.id.nav_calendario:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, CrearCalendarioActivity.class));
+                                startActivity(new Intent(MinutaActivity.this, CalendarioPracticanteActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, LogInActivity.class));
+                                startActivity(new Intent(MinutaActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;

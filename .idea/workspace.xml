@@ -10,72 +10,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e30ad637-3fd1-426d-860e-2e9e0df55806" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/CrearCalendarioActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/EncargadoActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarAsesor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarEmpresaActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarPeriodoActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarPracticanteActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarProfCursoActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/AsignarNotaProfCursoActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/ConsultarDatosActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/ConsultarNotasFinales.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/PCursoActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/appicon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/home.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_asignar_nota_curso.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_consultar_datos.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_consultar_notas_finales.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_calendario.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_encargado.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pcurso.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_asesor.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_empresa.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_periodo.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_practicante.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_prof_curso.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_encargado.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_profcurso.xml" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/AsesorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/AsesorActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/AsignarNotaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/AsignarNotaActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/CalendarioAsesorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/CalendarioAsesorActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/ConsultarEntregableActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/ConsultarEntregableActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/ConsultarMinutasActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/ConsultarMinutasActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/SolicitarReunionActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/SolicitarReunionActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/CalendarioPracticanteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/CalendarioPracticanteActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/MinutaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/MinutaActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/PracticanteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/PracticanteActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/RegistrarEntregableActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/RegistrarEntregableActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/LogInActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/LogInActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/vine.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_asesor.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_asesor.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_asignar_nota.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_asignar_nota.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendario.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendario.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendario_entregables.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendario_entregables.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_consultar_entregable.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_consultar_entregable.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_consultar_minutas.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_consultar_minutas.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/AsesorActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/AsignarNotaActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/CalendarioAsesorActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/ConsultarEntregableActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/ConsultarMinutasActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/SolicitarReunionActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/CrearCalendarioActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/EncargadoActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarAsesor.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarEmpresaActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarPeriodoActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarPracticanteActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarProfCursoActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/CalendarioPracticanteActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/MinutaActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/PracticanteActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/RegistrarEntregableActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/AsignarNotaProfCursoActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/ConsultarDatosActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/ConsultarNotasFinales.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/PCursoActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/LogInActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/LogInActivity.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_log_in.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_log_in.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_minuta.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_minuta.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_practicante.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_practicante.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_entregable.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_entregable.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_solicitar_reunion.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_solicitar_reunion.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_asesor.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_asesor.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_practicantes.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_practicantes.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -128,131 +88,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_pcurso.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pcurso.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="LogInActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/LogInActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="101" column="35" lean-forward="false" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_practicante.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_practicante.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="112" column="51" lean-forward="false" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_registrar_asesor.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_asesor.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="2482">
-              <caret line="146" column="54" lean-forward="false" selection-start-line="146" selection-start-column="54" selection-end-line="146" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_registrar_empresa.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_empresa.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="231" column="35" lean-forward="false" selection-start-line="231" selection-start-column="35" selection-end-line="231" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_registrar_entregable.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_entregable.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="66" lean-forward="false" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_registrar_periodo.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_periodo.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="128" column="35" lean-forward="false" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_solicitar_reunion.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_solicitar_reunion.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_calendario.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_calendario.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="181" column="48" lean-forward="false" selection-start-line="181" selection-start-column="48" selection-end-line="181" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_log_in.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_in.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_minuta.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_minuta.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="2227">
-              <caret line="131" column="35" lean-forward="false" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
+            <state relative-caret-position="68">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -2284,7 +2124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/AsignarNotaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_consultar_notas_finales.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_asesor.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_encargado.xml" />
@@ -2321,7 +2160,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_practicante.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/LogInActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pcurso.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_encargado.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/AsignarNotaProfCursoActivity.java" />
@@ -2335,6 +2173,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_crear_calendario.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registrar_empresa.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_calendario.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/LogInActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/LogInActivity.java" />
       </list>
     </option>
   </component>
@@ -2359,7 +2199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2383,26 +2222,21 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="progra2" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ActivitiesPracticante" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Progra2" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Progra2" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="progra2" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2589,7 +2423,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2604,7 +2438,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2249467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2249467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49573562" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2663,56 +2497,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/RegistrarProfCursoActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesEncargado/RegistrarProfCursoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="58" column="83" lean-forward="false" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/AsesorActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesAsesor/AsesorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="64" column="71" lean-forward="false" selection-start-line="64" selection-start-column="71" selection-end-line="64" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/AsignarNotaActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesAsesor/AsignarNotaActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="57" column="76" lean-forward="false" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/CalendarioAsesorActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesAsesor/CalendarioAsesorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="59" column="81" lean-forward="false" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/ConsultarEntregableActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesAsesor/ConsultarEntregableActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="58" column="84" lean-forward="false" selection-start-line="58" selection-start-column="84" selection-end-line="58" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/ConsultarMinutasActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesAsesor/ConsultarMinutasActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="56" column="81" lean-forward="false" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesAsesor/SolicitarReunionActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesAsesor/SolicitarReunionActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesEncargado/EncargadoActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesEncargado/EncargadoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="58" column="75" lean-forward="false" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
@@ -2744,7 +2578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="67" lean-forward="true" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2797,14 +2630,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_profcurso.xml">
@@ -2814,39 +2647,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/LogInActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="44" column="83" lean-forward="false" selection-start-line="44" selection-start-column="83" selection-end-line="44" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/ConsultarDatosActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesProfCurso/ConsultarDatosActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/PCursoActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesProfCurso/PCursoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/ConsultarNotasFinales.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesProfCurso/ConsultarNotasFinales.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesProfCurso/AsignarNotaProfCursoActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesProfCurso/AsignarNotaProfCursoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
@@ -2871,7 +2696,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1836">
           <caret line="108" column="35" lean-forward="false" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2882,7 +2706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5066">
           <caret line="298" column="8" lean-forward="false" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2893,11 +2716,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2601">
           <caret line="153" column="42" lean-forward="false" selection-start-line="153" selection-start-column="42" selection-end-line="153" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/ActivitiesPracticante/CalendarioPracticanteActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/ActivitiesPracticante/CalendarioPracticanteActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
@@ -2912,7 +2734,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="2193">
           <caret line="129" column="60" lean-forward="false" selection-start-line="129" selection-start-column="60" selection-end-line="129" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2923,7 +2744,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="679">
           <caret line="210" column="35" lean-forward="false" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2934,7 +2754,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="2380">
           <caret line="140" column="25" lean-forward="false" selection-start-line="57" selection-start-column="12" selection-end-line="140" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2945,7 +2764,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="3859">
           <caret line="227" column="35" lean-forward="false" selection-start-line="227" selection-start-column="35" selection-end-line="227" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2956,7 +2774,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2967,7 +2784,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2989,7 +2805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="758">
           <caret line="332" column="35" lean-forward="false" selection-start-line="332" selection-start-column="35" selection-end-line="332" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3000,29 +2815,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="115" column="35" lean-forward="false" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_in.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_minuta.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="131" column="35" lean-forward="false" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3031,7 +2823,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
+        <state relative-caret-position="1717">
           <caret line="101" column="35" lean-forward="false" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
           <folding />
         </state>
@@ -3064,7 +2856,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
+        <state relative-caret-position="809">
           <caret line="231" column="35" lean-forward="false" selection-start-line="231" selection-start-column="35" selection-end-line="231" selection-end-column="35" />
           <folding />
         </state>
@@ -3086,7 +2878,7 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="832">
+        <state relative-caret-position="2176">
           <caret line="128" column="35" lean-forward="false" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
           <folding />
         </state>
@@ -3108,8 +2900,38 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="690">
+        <state relative-caret-position="3077">
           <caret line="181" column="48" lean-forward="false" selection-start-line="181" selection-start-column="48" selection-end-line="181" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_log_in.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_minuta.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="131" column="35" lean-forward="false" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/LogInActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>

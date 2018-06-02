@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesAsesor;
+package com.example.poo.progra2.View.ActivitiesEncargado;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,19 +10,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class ConsultarMinutasActivity extends AppCompatActivity {
-
+public class RegistrarAsesor extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consultar_minutas);
+        setContentView(R.layout.activity_registrar_asesor);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -37,30 +35,34 @@ public class ConsultarMinutasActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem item) {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
-                        switch (item.getItemId()){
-                            case R.id.nav_calendario:
-                                startActivity(new Intent(ConsultarMinutasActivity.this,CalendarioAsesorActivity.class));
-                                break;
-                            case R.id.nav_asignar:
-                                startActivity(new Intent(ConsultarMinutasActivity.this, AsignarNotaActivity.class ));
-                                break;
-                            case R.id.nav_consultarEntregables:
-                                startActivity(new Intent(ConsultarMinutasActivity.this, ConsultarEntregableActivity.class));
-                                break;
-                            case R.id.nav_solicitar:
-                                startActivity(new Intent(ConsultarMinutasActivity.this, SolicitarReunionActivity.class));
-                                break;
+                        switch (item.getItemId()) {
                             case R.id.nav_inicio:
-                                startActivity(new Intent(ConsultarMinutasActivity.this, AsesorActivity.class));
+                                startActivity(new Intent(RegistrarAsesor.this, EncargadoActivity.class));
+                                break;
+                            case R.id.nav_empresa:
+                                startActivity(new Intent(RegistrarAsesor.this, RegistrarEmpresaActivity.class));
+                                break;
+                            case R.id.nav_profC:
+                                startActivity(new Intent(RegistrarAsesor.this, RegistrarProfCursoActivity.class));
+                                break;
+                            case R.id.nav_periodo:
+                                startActivity(new Intent(RegistrarAsesor.this, RegistrarPeriodoActivity.class));
+                                break;
+                            case R.id.nav_practicante:
+                                startActivity(new Intent(RegistrarAsesor.this, RegistrarPracticanteActivity.class));
+                                break;
+                            case R.id.nav_calendario:
+                                startActivity(new Intent(RegistrarAsesor.this, CrearCalendarioActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(ConsultarMinutasActivity.this, LogInActivity.class));
+                                startActivity(new Intent(RegistrarAsesor.this, LogInActivity.class));
                                 break;
                         }
                         return true;
                     }
                 });
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

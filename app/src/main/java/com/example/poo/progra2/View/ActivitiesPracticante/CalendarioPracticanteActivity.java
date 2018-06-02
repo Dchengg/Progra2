@@ -1,5 +1,4 @@
-
-package com.example.poo.progra2.ActivitiesAsesor;
+package com.example.poo.progra2.View.ActivitiesPracticante;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -11,13 +10,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesPracticante.MinutaActivity;
-import com.example.poo.progra2.ActivitiesPracticante.RegistrarEntregableActivity;
-import com.example.poo.progra2.ActivitiesProfCurso.ConsultarDatosActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class SolicitarReunionActivity extends AppCompatActivity {
+public class CalendarioPracticanteActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
@@ -25,7 +21,7 @@ public class SolicitarReunionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_solicitar_reunion);
+        setContentView(R.layout.activity_calendario);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -41,23 +37,17 @@ public class SolicitarReunionActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
-                            case R.id.nav_calendario:
-                                startActivity(new Intent(SolicitarReunionActivity.this,CalendarioAsesorActivity.class));
-                                break;
-                            case R.id.nav_asignar:
-                                startActivity(new Intent(SolicitarReunionActivity.this, AsignarNotaActivity.class ));
-                                break;
-                            case R.id.nav_consultarEntregables:
-                                startActivity(new Intent(SolicitarReunionActivity.this, ConsultarEntregableActivity.class));
-                                break;
                             case R.id.nav_inicio:
-                                startActivity(new Intent(SolicitarReunionActivity.this, AsesorActivity.class));
+                                startActivity(new Intent(CalendarioPracticanteActivity.this,PracticanteActivity.class));
                                 break;
-                            case R.id.nav_consultarMinutas:
-                                startActivity(new Intent(SolicitarReunionActivity.this, ConsultarMinutasActivity.class));
+                            case R.id.nav_entregable:
+                                startActivity(new Intent(CalendarioPracticanteActivity.this, RegistrarEntregableActivity.class ));
+                                break;
+                            case R.id.nav_minuta:
+                                startActivity(new Intent(CalendarioPracticanteActivity.this, MinutaActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(SolicitarReunionActivity.this, LogInActivity.class));
+                                startActivity(new Intent(CalendarioPracticanteActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;

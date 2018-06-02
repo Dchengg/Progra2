@@ -1,4 +1,4 @@
-package com.example.poo.progra2.ActivitiesPracticante;
+package com.example.poo.progra2.View.ActivitiesAsesor;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -10,19 +10,18 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.poo.progra2.ActivitiesAsesor.CalendarioAsesorActivity;
-import com.example.poo.progra2.LogInActivity;
+import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 
-public class CalendarioPracticanteActivity extends AppCompatActivity {
+public class ConsultarEntregableActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendario);
+        setContentView(R.layout.activity_consultar_entregable);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -38,17 +37,23 @@ public class CalendarioPracticanteActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()){
+                            case R.id.nav_calendario:
+                                startActivity(new Intent(ConsultarEntregableActivity.this,CalendarioAsesorActivity.class));
+                                break;
+                            case R.id.nav_asignar:
+                                startActivity(new Intent(ConsultarEntregableActivity.this, AsignarNotaActivity.class ));
+                                break;
                             case R.id.nav_inicio:
-                                startActivity(new Intent(CalendarioPracticanteActivity.this,PracticanteActivity.class));
+                                startActivity(new Intent(ConsultarEntregableActivity.this, AsesorActivity.class));
                                 break;
-                            case R.id.nav_entregable:
-                                startActivity(new Intent(CalendarioPracticanteActivity.this, RegistrarEntregableActivity.class ));
+                            case R.id.nav_solicitar:
+                                startActivity(new Intent(ConsultarEntregableActivity.this, SolicitarReunionActivity.class));
                                 break;
-                            case R.id.nav_minuta:
-                                startActivity(new Intent(CalendarioPracticanteActivity.this, MinutaActivity.class));
+                            case R.id.nav_consultarMinutas:
+                                startActivity(new Intent(ConsultarEntregableActivity.this, ConsultarMinutasActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(CalendarioPracticanteActivity.this, LogInActivity.class));
+                                startActivity(new Intent(ConsultarEntregableActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;

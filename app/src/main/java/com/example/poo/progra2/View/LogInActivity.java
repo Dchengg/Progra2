@@ -1,4 +1,4 @@
-package com.example.poo.progra2;
+package com.example.poo.progra2.View;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,14 +8,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Switch;
-import android.widget.Toast;
 
-import com.example.poo.progra2.ActivitiesAsesor.AsesorActivity;
-import com.example.poo.progra2.ActivitiesAsesor.AsignarNotaActivity;
-import com.example.poo.progra2.ActivitiesEncargado.EncargadoActivity;
-import com.example.poo.progra2.ActivitiesPracticante.PracticanteActivity;
-import com.example.poo.progra2.ActivitiesProfCurso.PCursoActivity;
+import com.example.poo.progra2.R;
+import com.example.poo.progra2.View.ActivitiesAsesor.AsesorActivity;
+import com.example.poo.progra2.View.ActivitiesEncargado.EncargadoActivity;
+import com.example.poo.progra2.View.ActivitiesPracticante.PracticanteActivity;
+import com.example.poo.progra2.View.ActivitiesProfCurso.PCursoActivity;
 
 public class LogInActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
