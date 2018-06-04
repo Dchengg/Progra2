@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <tipo>
+        <campo>
+            <id>diego</id>
+            <contrasena>123</contrasena>
+        </campo>
+    </tipo>
+</root>
