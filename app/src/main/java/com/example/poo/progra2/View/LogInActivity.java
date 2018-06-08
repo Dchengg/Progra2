@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -17,9 +16,9 @@ import com.example.poo.progra2.View.ActivitiesAsesor.AsesorActivity;
 import com.example.poo.progra2.View.ActivitiesEncargado.EncargadoActivity;
 import com.example.poo.progra2.View.ActivitiesPracticante.PracticanteActivity;
 import com.example.poo.progra2.View.ActivitiesProfCurso.PCursoActivity;
-import com.example.poo.progra2.xml.XmlParser;
+import com.example.poo.progra2.modelo.Practicante;
+import com.example.poo.progra2.xml.PracticanteDAO;
 
-import org.jdom2.JDOMException;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
@@ -37,19 +36,18 @@ public class LogInActivity extends AppCompatActivity implements AdapterView.OnIt
         usuarios.setOnItemSelectedListener(this);
         ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item,tiposDeUsuario);
         usuarios.setAdapter(aa);
-        Button button = (Button) findViewById(R.id.log_in_button);
+        PracticanteDAO dao = new PracticanteDAO(getApplicationContext());
         try {
-            InputStream inputStream = getResources().openRawResource(R.raw.usuarios);
-            XmlParser parser = new XmlParser();
-            String id = parser.parseXml(inputStream);
-            TextView e = findViewById(R.id.textView);
-            Log.d("testTag","AQUIIIIII" + id);
-            e.setText(id);
+            dao.parseXml();
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        TextView textView = findViewById(R.id.textView);
+        textView.setText(PracticanteDAO.practicantes.get(1).getNombre());
+        dao.writeXML();
+        Button button = (Button) findViewById(R.id.log_in_button);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 int tipo  = usuarios.getSelectedItemPosition();

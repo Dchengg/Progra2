@@ -15,7 +15,11 @@ public class Practicante {
     private ArrayList<Minuta> minutas = new ArrayList<Minuta>();
     private ArrayList<Entregable> entregables = new ArrayList<Entregable>();
 
-    public Practicante(String pNombre, String pCarnet, String pContrasena, String pFecha, String pDir, String pCorreoProfAsesor, String pCorreoProfCurso, String correoProfAsesor, String pEmpresa) {
+    public Practicante(){
+
+    }
+
+    public Practicante(String pNombre, String pCarnet, String pContrasena, String pFecha, String pDir, String pCorreoProfAsesor, String pCorreoProfCurso, String pEmpresa) {
         setNombre(pNombre);
         setCarnet(pCarnet);
         setContrasena(pContrasena);
@@ -24,7 +28,6 @@ public class Practicante {
         setCorreoProfAsesor(pCorreoProfAsesor);
         setCorreoProfCurso(pCorreoProfCurso);
         setEmpresa(pEmpresa);
-
     }
 
     public String getNombre() {
