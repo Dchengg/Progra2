@@ -1,4 +1,4 @@
-package com.example.poo.progra2.modelo;
+package com.example.poo.progra2.logica;
 
 public class Empresa {
 

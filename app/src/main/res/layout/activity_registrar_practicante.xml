@@ -75,7 +75,7 @@
                         android:layout_marginTop="60dp"
                         app:layout_constraintBottom_toTopOf="@+id/textView7"
                         app:layout_constraintStart_toEndOf="@+id/editText10"
-                        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+                        app:layout_constraintTop_toBottomOf="@+id/contraTextField" />
 
                     <Spinner
                         android:id="@+id/editText9"
@@ -89,11 +89,11 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toEndOf="@+id/editText5"
-                        app:layout_constraintTop_toBottomOf="@+id/editText3"
+                        app:layout_constraintTop_toBottomOf="@+id/contraTextField"
                         app:layout_constraintVertical_bias="0.0" />
 
                     <EditText
-                        android:id="@+id/editText3"
+                        android:id="@+id/contraTextField"
                         android:layout_width="246dp"
                         android:layout_height="35dp"
                         android:layout_marginEnd="8dp"
@@ -199,7 +199,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
-                        android:id="@+id/editText"
+                        android:id="@+id/idTextField"
                         android:layout_width="246dp"
                         android:layout_height="35dp"
                         android:layout_marginEnd="8dp"
@@ -269,7 +269,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.909"
                         app:layout_constraintStart_toEndOf="@+id/textView13"
-                        app:layout_constraintTop_toBottomOf="@+id/editText" />
+                        app:layout_constraintTop_toBottomOf="@+id/idTextField" />
 
                     <Button
                         android:id="@+id/button"
