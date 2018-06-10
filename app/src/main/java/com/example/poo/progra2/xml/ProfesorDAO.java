@@ -4,7 +4,6 @@ import android.content.Context;
 import android.util.Log;
 import android.util.Xml;
 
-import com.example.poo.progra2.logica.Practicante;
 import com.example.poo.progra2.logica.Profesor;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -29,10 +28,20 @@ public class ProfesorDAO extends DAO{
             fileName = "profesores.xml";
             file =  new File(context.getFileStreamPath(fileName).getPath());
             Log.d("ProfesoresDao", context.getFileStreamPath(fileName).getPath());
-            Profesor nuevo = new Profesor("Susana", "susasna@gmail.com","8746512354","susanaRules");
-            profesores.add(nuevo);
+            //Profesor nuevo = new Profesor("Susana", "susasna@gmail.com","8746512354","susanaRules");
+            //profesores.add(nuevo);
         }
     }
+
+    public boolean logIn(String id, String contra){
+        for(Profesor profesor:profesores){
+            if(profesor.getNombre().equals(id) && profesor.getContrasena().equals(contra)){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     public void parseXml(){
         try {

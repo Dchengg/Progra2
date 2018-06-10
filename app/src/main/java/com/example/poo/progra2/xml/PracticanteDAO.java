@@ -36,8 +36,8 @@ public class PracticanteDAO extends DAO {
             fileName = "practicantes.xml";
             file =  new File(context.getFileStreamPath(fileName).getPath());
             Log.d("PracticanteDao", context.getFileStreamPath(fileName).getPath());
-            Practicante nuevo = new Practicante("Tapia","2017097354","456","12/6/98", "escazu", "ProfAsesor@gmail.com","ProfCurso@gmail.com","Google");
-            practicantes.add(nuevo);
+            //Practicante nuevo = new Practicante("Tapia","2017097354","456","12/6/98", "escazu", "ProfAsesor@gmail.com","ProfCurso@gmail.com","Google");
+            //practicantes.add(nuevo);
         }
     }
 
@@ -50,6 +50,12 @@ public class PracticanteDAO extends DAO {
         }
         return false;
     }
+
+    public void registrarPracticante(String pNombre, String pCarnet, String pContrasena, String pFecha, String pDir, String pCorreoProfAsesor, String pCorreoProfCurso, String pEmpresa){
+        Practicante nuevo =  new Practicante(pNombre,pCarnet,pContrasena,pFecha,pDir,pCorreoProfAsesor,pCorreoProfCurso,pEmpresa);
+        practicantes.add(nuevo);
+    }
+
     public void parseXml(){
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
