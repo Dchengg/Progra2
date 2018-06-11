@@ -70,22 +70,12 @@
           <file leaf-file-name="PeriodoDAO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PeriodoDAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+                <state relative-caret-position="199">
+                  <caret line="113" column="100" lean-forward="false" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="100" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#792#801#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Empresa.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/logica/Empresa.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -110,31 +100,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="periodos.xml" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/huawei-huawei_kii_l22-DVMDU16713001503/data/data/com.example.poo.progra2/files/periodos.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="LogInActivity.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/LogInActivity.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="323">
                   <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="practicantes.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/huawei-huawei_kii_l22-DVMDU16713001503/data/data/com.example.poo.progra2/files/practicantes.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
@@ -153,8 +123,28 @@
           <file leaf-file-name="PracticanteDAO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PracticanteDAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+                <state relative-caret-position="304">
+                  <caret line="119" column="100" lean-forward="false" selection-start-line="119" selection-start-column="100" selection-end-line="119" selection-end-column="100" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="periodos.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/huawei-huawei_kii_l22-DVMDU16713001503/data/data/com.example.poo.progra2/files/periodos.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="practicantes.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/huawei-huawei_kii_l22-DVMDU16713001503/data/data/com.example.poo.progra2/files/practicantes.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -167,8 +157,8 @@
           <file leaf-file-name="Entregable.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/logica/Entregable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+                <state relative-caret-position="289">
+                  <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -2271,13 +2261,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/logica/Entregable.java" />
         <option value="$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/huawei-huawei_kii_l22-DVMDU16713001503/data/data/com.example.poo.progra2/files/practicantes.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/View/LogInActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PracticanteDAO.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PeriodoDAO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/DAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PeriodoDAO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PracticanteDAO.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -2629,7 +2619,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3093,18 +3083,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/logica/Empresa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/logica/Periodo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/logica/Entregable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -3117,18 +3115,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PracticanteDAO.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/logica/Empresa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="221">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PeriodoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="199">
+          <caret line="113" column="100" lean-forward="false" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#792#801#0" expanded="true" />
@@ -3136,26 +3134,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/DAO.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/xml/PracticanteDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="304">
+          <caret line="119" column="100" lean-forward="false" selection-start-line="119" selection-start-column="100" selection-end-line="119" selection-end-column="100" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/huawei-huawei_kii_l22-DVMDU16713001503/data/data/com.example.poo.progra2/files/practicantes.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/poo/progra2/logica/Entregable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="17">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           <folding />
         </state>
       </provider>

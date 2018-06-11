@@ -117,6 +117,7 @@ public class PracticanteDAO extends DAO {
             XmlSerializer xmlSerializer  = Xml.newSerializer();
             StringWriter writer = new StringWriter();
             xmlSerializer.setOutput(writer);
+            xmlSerializer.setFeature("http://xmlpull.org/v1/doc/features.html#indent-output", true);
             xmlSerializer.startDocument("UTF-8", true);
             xmlSerializer.startTag(null,"root");
             for(Practicante practicante:practicantes){
