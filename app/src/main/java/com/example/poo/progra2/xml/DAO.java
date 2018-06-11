@@ -1,8 +1,15 @@
 package com.example.poo.progra2.xml;
 
 import android.os.Environment;
+import android.util.Log;
+import android.util.Xml;
+
+import org.xmlpull.v1.XmlSerializer;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.StringWriter;
 
 abstract class DAO {
 

@@ -16,6 +16,10 @@ import com.example.poo.progra2.View.ActivitiesAsesor.AsesorActivity;
 import com.example.poo.progra2.View.ActivitiesEncargado.EncargadoActivity;
 import com.example.poo.progra2.View.ActivitiesPracticante.PracticanteActivity;
 import com.example.poo.progra2.View.ActivitiesProfCurso.PCursoActivity;
+import com.example.poo.progra2.logica.Calendario;
+import com.example.poo.progra2.logica.Entregable;
+import com.example.poo.progra2.logica.Periodo;
+import com.example.poo.progra2.xml.PeriodoDAO;
 import com.example.poo.progra2.xml.PracticanteDAO;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -34,7 +38,16 @@ public class LogInActivity extends AppCompatActivity implements AdapterView.OnIt
         usuarios.setOnItemSelectedListener(this);
         ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item,tiposDeUsuario);
         usuarios.setAdapter(aa);
+        final PeriodoDAO daoPeriodo = new PeriodoDAO(getApplicationContext());
+        Calendario calendario = new Calendario();
+        Entregable entregable = new Entregable("Tarea 1","Esto es una tarea","15/2/18",true);
+        calendario.agregarEntregable(entregable);
+        daoPeriodo.agregarPeriodo("1 Semestre","2018",calendario);
+        Calendario calendario1 =  new Calendario();
+        daoPeriodo.agregarPeriodo("2 semestre","2018",calendario1);
+        daoPeriodo.writeXml();
         final PracticanteDAO dao = new PracticanteDAO(getApplicationContext());
+        dao.writeXml();
         dao.parseXml();
         dao.writeXml();
         Button button = (Button) findViewById(R.id.log_in_button);
@@ -49,6 +62,8 @@ public class LogInActivity extends AppCompatActivity implements AdapterView.OnIt
                         String contra = contraField.getText().toString();
                         if(dao.logIn(id,contra)) {
                             startActivity(new Intent(LogInActivity.this, PracticanteActivity.class));
+                        }else{
+
                         }
                         break;
                     case 1:

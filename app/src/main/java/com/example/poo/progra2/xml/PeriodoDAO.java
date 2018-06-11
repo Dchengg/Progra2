@@ -1,5 +1,6 @@
 package com.example.poo.progra2.xml;
 
+import android.content.Context;
 import android.util.Log;
 import android.util.Xml;
 
@@ -13,7 +14,9 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 import org.xmlpull.v1.XmlSerializer;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.StringWriter;
@@ -21,10 +24,28 @@ import java.util.ArrayList;
 
 public class PeriodoDAO extends DAO {
 
-    ArrayList<Periodo> periodos = new ArrayList<Periodo>();
+    public static ArrayList<Periodo> periodos = new ArrayList<Periodo>();
 
+    public PeriodoDAO(Context context){
+        if(!isExternalStorageAvailable() || isExternalStorageReadOnly()){
+            Log.d("PeriodoDao", "External storage not available or you don't have permission to write");
+        }else{
+            fileName = "periodos.xml";
+            file =  new File(context.getFileStreamPath(fileName).getPath());
+            if(!file.exists()){
+                writeXml();
+            }
+            Log.d("PeriodoDao", context.getFileStreamPath(fileName).getPath());
+        }
+    }
 
-    public void parseXml(){
+    public void agregarPeriodo(String pSemestre,String pAno,Calendario pCalendario){
+        Periodo nuevo = new Periodo(pSemestre,pAno);
+        nuevo.setCalendario(pCalendario);
+        periodos.add(nuevo);
+    }
+
+    public void parseXml() {
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -45,10 +66,10 @@ public class PeriodoDAO extends DAO {
                         } else if (periodo != null) {
                             if (tag.equalsIgnoreCase("semestre")) {
                                 periodo.setSemestre(parser.nextText());
-                            }else if(tag.equalsIgnoreCase("ano")){
+                            } else if (tag.equalsIgnoreCase("ano")) {
                                 periodo.setAno(parser.nextText());
-                            }else if(tag.equalsIgnoreCase("calendario")){
-
+                            } else if (tag.equalsIgnoreCase("calendario")) {
+                                leerCalendario(parser, periodo);
                             }
                         }
                         break;
@@ -70,7 +91,6 @@ public class PeriodoDAO extends DAO {
         Entregable entregable = null;
         String tag = parser.getName();
         int eventType = parser.getEventType();
-        //Entregable entregable = null;
         while (eventType != XmlPullParser.END_TAG && tag.equalsIgnoreCase("calendario")){
             switch (eventType){
                 case XmlPullParser.START_TAG:
@@ -104,11 +124,13 @@ public class PeriodoDAO extends DAO {
                 xmlSerializer.text(periodo.getAno());
                 xmlSerializer.endTag(null,"ano");
 
-                xmlSerializer.startTag(null,"calendario");
+                if(periodo.getCalendario() != null){
+                    xmlSerializer.startTag(null,"calendario");
 
-                insertEntregables(xmlSerializer,periodo.getCalendario().entregables);
+                    insertEntregables(xmlSerializer,periodo.getCalendario().entregables);
 
-                xmlSerializer.endTag(null, "calendario");
+                    xmlSerializer.endTag(null, "calendario");
+                }
 
                 xmlSerializer.endTag(null,"periodo");
             }
@@ -131,11 +153,11 @@ public class PeriodoDAO extends DAO {
 
             xmlSerializer.startTag(null,"titulo");
             xmlSerializer.text(entregable.getTitulo());
-            xmlSerializer.startTag(null,"titulo");
+            xmlSerializer.endTag(null,"titulo");
 
             xmlSerializer.startTag(null,"descripcion");
             xmlSerializer.text(entregable.getDescripcion());
-            xmlSerializer.startTag(null,"descripcion");
+            xmlSerializer.endTag(null,"descripcion");
 
             xmlSerializer.startTag(null,"fechaDeEntrega");
             xmlSerializer.text(entregable.getFechaDeEntrega());
@@ -149,7 +171,7 @@ public class PeriodoDAO extends DAO {
             }
             xmlSerializer.endTag(null,"tipo");
 
-            xmlSerializer.startTag(null,"nota");
+            /*xmlSerializer.startTag(null,"nota");
             xmlSerializer.text(String.valueOf(entregable.getNota()));
             xmlSerializer.endTag(null,"nota");
 
@@ -159,7 +181,7 @@ public class PeriodoDAO extends DAO {
 
             xmlSerializer.startTag(null,"comentarios");
             xmlSerializer.text(entregable.getComentarios());
-            xmlSerializer.endTag(null,"comentarios");
+            xmlSerializer.endTag(null,"comentarios");*/
 
             xmlSerializer.endTag(null,"entregable");
         }

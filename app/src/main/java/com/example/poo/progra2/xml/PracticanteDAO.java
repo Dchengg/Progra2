@@ -35,6 +35,9 @@ public class PracticanteDAO extends DAO {
         }else{
             fileName = "practicantes.xml";
             file =  new File(context.getFileStreamPath(fileName).getPath());
+            if(!file.exists()){
+                writeXml();
+            }
             Log.d("PracticanteDao", context.getFileStreamPath(fileName).getPath());
             //Practicante nuevo = new Practicante("Tapia","2017097354","456","12/6/98", "escazu", "ProfAsesor@gmail.com","ProfCurso@gmail.com","Google");
             //practicantes.add(nuevo);
