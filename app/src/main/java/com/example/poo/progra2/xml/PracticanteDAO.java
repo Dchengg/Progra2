@@ -17,9 +17,7 @@ import android.util.Log;
 import android.util.Xml;
 
 
-
-
-
+import com.example.poo.progra2.logica.Periodo;
 import com.example.poo.progra2.logica.Practicante;
 
 
@@ -88,15 +86,30 @@ public class PracticanteDAO extends DAO {
 
     }
 
+    public Practicante buscarPracticante(String pCarnet){
+        for(int i = 0; i<practicantes.size(); i++){
+            if(practicantes.get(i).getCarnet().equals(pCarnet)){
+                    return practicantes.get(i);
+            }
+        }
+        return null;
+    }
 
-
+    public boolean revisarRepetido(String pCorreo){
+        for(int i = 0; i<practicantes.size(); i++){
+            if(practicantes.get(i).getCorreo().equals(pCorreo)){
+                return true;
+            }
+        }
+        return false;
+    }
 
 
     public boolean logIn(String id, String contra){
 
         for(Practicante practicante:practicantes){
 
-            if(practicante.getNombre().equals(id) && practicante.getContrasena().equals(contra)){
+            if(practicante.getCarnet().equals(id) && practicante.getContrasena().equals(contra)){
 
                 return true;
 
@@ -110,9 +123,9 @@ public class PracticanteDAO extends DAO {
 
 
 
-    public void registrarPracticante(String pNombre, String pCarnet, String pContrasena, String pFecha, String pDir, String pCorreoProfAsesor, String pCorreoProfCurso, String pEmpresa){
+    public void registrarPracticante(String pNombre, String pCarnet, String pContrasena, String pFecha, String pDir, String pCorreoProfAsesor, String pCorreoProfCurso, String pEmpresa, String pCorreo){
 
-        Practicante nuevo =  new Practicante(pNombre,pCarnet,pContrasena,pFecha,pDir,pCorreoProfAsesor,pCorreoProfCurso,pEmpresa);
+        Practicante nuevo =  new Practicante(pNombre,pCarnet,pContrasena,pFecha,pDir,pCorreoProfAsesor,pCorreoProfCurso,pEmpresa, pCorreo);
 
         practicantes.add(nuevo);
 

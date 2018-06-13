@@ -29,6 +29,34 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/textView73"
+                android:layout_width="252dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="18dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:fontFamily="@font/aldrich"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="252dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginTop="87dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:fontFamily="@font/aldrich"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+            <TextView
                 android:id="@+id/textView40"
                 android:layout_width="352dp"
                 android:layout_height="wrap_content"
@@ -52,7 +80,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="68dp"
                 android:fontFamily="@font/aldrich"
-                android:text="ID :"
+                android:text="Nombre: "
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -66,34 +94,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="80dp"
                 android:fontFamily="@font/aldrich"
                 android:text="Correo electrónico :"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
-            <TextView
-                android:id="@+id/textView58"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="52dp"
-                android:fontFamily="@font/aldrich"
-                android:text="Número de telefono : "
-                android:textColor="@android:color/white"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.047"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView56"
-                app:layout_constraintVertical_bias="0.0" />
         </android.support.constraint.ConstraintLayout>
 
     </FrameLayout>

@@ -28,10 +28,59 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView70"
+                android:layout_width="185dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="59dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/aldrich"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="185dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="183dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/aldrich"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="185dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginTop="14dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/aldrich"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="185dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="62dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/aldrich"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView11"
                 android:layout_width="84dp"
-                android:layout_height="28dp"
-                android:layout_marginLeft="16dp"
+                android:layout_height="26dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="92dp"
                 android:text="Carnet : "
@@ -39,6 +88,18 @@
                 android:textSize="18sp"
                 app:fontFamily="@font/aldrich"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="185dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="92dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/aldrich"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -72,8 +133,7 @@
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginLeft="16dp"
+                android:layout_height="24dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="56dp"
                 android:text="Correo del Profesor Asesor : "

@@ -9,18 +9,31 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
+import com.example.poo.progra2.logica.Profesor;
+import com.example.poo.progra2.xml.ProfesorDAO;
 
 public class PCursoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
+    private ProfesorDAO dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pcurso);
+        dao = new ProfesorDAO(getApplicationContext());
+        Bundle b = getIntent().getExtras();
+        String id = b.getString("id");
+        Profesor p = dao.buscarProfesor(id);
+        String nombre = p.getNombre();
+        TextView t = (TextView)findViewById(R.id.textView72);
+        t.setText(id);
+        TextView t2 = (TextView)findViewById(R.id.textView71);
+        t2.setText(nombre);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();

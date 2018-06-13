@@ -18,9 +18,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.poo.progra2.View.ActivitiesAsesor.AsesorActivity;
-import com.example.poo.progra2.View.ActivitiesPracticante.PracticanteActivity;
-import com.example.poo.progra2.View.ActivitiesProfCurso.PCursoActivity;
 import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 import com.example.poo.progra2.logica.Empresa;
@@ -32,12 +29,14 @@ import com.example.poo.progra2.xml.PeriodoDAO;
 import com.example.poo.progra2.xml.PracticanteDAO;
 import com.example.poo.progra2.xml.ProfesorDAO;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class RegistrarPracticanteActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
     private PracticanteDAO dao;
+    private PeriodoDAO daoP;
     ArrayList<Periodo> periodos = PeriodoDAO.periodos;
     ArrayList<Profesor> profesores = ProfesorDAO.profesores;
     ArrayList<Empresa> empresas = EmpresaDAO.empresas;
@@ -49,6 +48,13 @@ public class RegistrarPracticanteActivity extends AppCompatActivity implements A
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar_practicante);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setDisplayHomeAsUpEnabled(true);
+        actionbar.setHomeAsUpIndicator(R.drawable.menu);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        dao = new PracticanteDAO(getApplicationContext());
         inicializarPeriodos();
         final Spinner periodoSpinner = (Spinner) findViewById(R.id.editText3623);
         periodoSpinner.setOnItemSelectedListener(this);
@@ -67,13 +73,6 @@ public class RegistrarPracticanteActivity extends AppCompatActivity implements A
         empresaSpinner.setOnItemSelectedListener(this);
         ArrayAdapter empreSpin = new ArrayAdapter(this, android.R.layout.simple_spinner_item, empre);
         empresaSpinner.setAdapter(empreSpin);
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ActionBar actionbar = getSupportActionBar();
-        actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.drawable.menu);
-        mDrawerLayout = findViewById(R.id.drawer_layout);
-        dao = new PracticanteDAO(getApplicationContext());
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
@@ -89,7 +88,7 @@ public class RegistrarPracticanteActivity extends AppCompatActivity implements A
                                 startActivity(new Intent(RegistrarPracticanteActivity.this, RegistrarEmpresaActivity.class));
                                 break;
                             case R.id.nav_profC:
-                                startActivity(new Intent(RegistrarPracticanteActivity.this, RegistrarProfCursoActivity.class));
+                                startActivity(new Intent(RegistrarPracticanteActivity.this, RegistrarProfActivity.class));
                                 break;
                             case R.id.nav_periodo:
                                 startActivity(new Intent(RegistrarPracticanteActivity.this, RegistrarPeriodoActivity.class));
@@ -132,24 +131,36 @@ public class RegistrarPracticanteActivity extends AppCompatActivity implements A
                     String profAsesor = profAsesorSpinner.getSelectedItem().toString();
                     String profCurso = profCursoSpinner.getSelectedItem().toString();
                     String empresa = empresaSpinner.getSelectedItem().toString();
-                    final PeriodoDAO daoP = new PeriodoDAO(getApplicationContext());
+                    daoP = new PeriodoDAO(getApplicationContext());
                     String[] p = perio.split(",");
                     Periodo perD = daoP.buscarPeriodo(p[0], p[1]);
-                    if(perD.getCalendario() == null){
+                    if(profCurso.equals(profAsesor)){
+                        Toast.makeText(RegistrarPracticanteActivity.this,"Profesor asesor y de curso deben ser diferentes", Toast.LENGTH_SHORT).show();
+                    }
+                    else if(perD.getCalendario() == null){
                         Toast.makeText(RegistrarPracticanteActivity.this,"No hay un calendario registrado", Toast.LENGTH_SHORT).show();
                     }else {
-                        final PracticanteDAO dao = new PracticanteDAO(getApplicationContext());
-                        dao.registrarPracticante(nombre, carnet, cedula, fecha, direccion, profAsesor, profCurso, empresa);
-                        Toast.makeText(RegistrarPracticanteActivity.this,"Practicante registrado", Toast.LENGTH_SHORT).show();
-                        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                        emailIntent.setData(Uri.parse("mailto:" + correo)); // aqui se coloca el corre a enviar el mensaje, es necesario el mailto:
-                        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Perfil completado"); // aqui se coloca el subject a enviar el correo
-                        emailIntent.putExtra(Intent.EXTRA_TEXT, "Su contraseña es su numero de cedula." + "\n" + "Numero de carnet: " + carnet + "\n" + "Profesor Asesor: " + profAsesor + "\n" + "Profesor Curso: " + profCurso + "\n" + "Empresa: " + empresa + "\n" + "Periodo: " + perio); // aqui va el body del correo
-
-                        try {
-                            startActivity(Intent.createChooser(emailIntent, "Send email using..."));
-                        } catch (android.content.ActivityNotFoundException ex) {
-                            Toast.makeText(RegistrarPracticanteActivity.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                        dao = new PracticanteDAO(getApplicationContext());
+                        if(dao.revisarRepetido(correo)){
+                            Toast.makeText(RegistrarPracticanteActivity.this,"Error: Practicante ya registrado", Toast.LENGTH_SHORT).show();
+                        }else {
+                            dao.registrarPracticante(nombre, carnet, cedula, fecha, direccion, profAsesor, profCurso, empresa, correo);
+                            Practicante prac = dao.buscarPracticante(carnet);
+                            String profA = prac.getCorreoProfAsesor();
+                            String profC = prac.getCorreoProfCurso();
+                            String correoP = prac.getCorreo();
+                            String emp = prac.getEmpresa();
+                            Toast.makeText(RegistrarPracticanteActivity.this, "Practicante registrado", Toast.LENGTH_SHORT).show();
+                            Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                            emailIntent.setData(Uri.parse("mailto:" + correoP)); // aqui se coloca el corre a enviar el mensaje, es necesario el mailto:
+                            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Perfil completado"); // aqui se coloca el subject a enviar el correo
+                            //emailIntent.putExtra(Intent.EXTRA_TEXT, "Su contraseña es su numero de cedula." + "\n" + "Numero de carnet: " + carnet + "\n" + "Profesor Asesor: " + profAsesor + "\n" + "Profesor Curso: " + profCurso + "\n" + "Empresa: " + empresa + "\n" + "Periodo: " + perio); // aqui va el body del correo
+                            emailIntent.putExtra(Intent.EXTRA_TEXT, "Su contraseña es su numero de cedula." + "\n" + "Numero de carnet: " + carnet + "\n" + "Profesor Asesor: " + profA + "\n" + "Profesor Curso: " + profC + "\n" + "Empresa: " + emp + "\n" + "Periodo: " + perio);
+                            try {
+                                startActivity(Intent.createChooser(emailIntent, "Send email using..."));
+                            } catch (android.content.ActivityNotFoundException ex) {
+                                Toast.makeText(RegistrarPracticanteActivity.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }
                 }

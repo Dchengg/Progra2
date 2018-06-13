@@ -11,10 +11,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.poo.progra2.R;
 import com.example.poo.progra2.View.ActivitiesAsesor.AsesorActivity;
 import com.example.poo.progra2.View.ActivitiesEncargado.EncargadoActivity;
+import com.example.poo.progra2.View.ActivitiesEncargado.RegistrarPracticanteActivity;
 import com.example.poo.progra2.View.ActivitiesPracticante.PracticanteActivity;
 import com.example.poo.progra2.View.ActivitiesProfCurso.PCursoActivity;
 import com.example.poo.progra2.logica.Empresa;
@@ -63,23 +65,37 @@ public class LogInActivity extends AppCompatActivity implements AdapterView.OnIt
                 switch (tipo){
                     case 0:
                         if(dao.logIn(id,contra)) {
-                            startActivity(new Intent(LogInActivity.this, PracticanteActivity.class));
+                            Intent i = new Intent(LogInActivity.this, PracticanteActivity.class);
+                            i.putExtra("id", id);
+                            startActivity(i);
+                        }else{
+                            Toast.makeText(LogInActivity.this,"Usuario/Contraseña incorrectos", Toast.LENGTH_SHORT).show();
                         }
                         break;
                     case 1:
                         if(daoP.logIn(id, contra)) {
-                            startActivity(new Intent(LogInActivity.this, PCursoActivity.class));
+                            Intent i = new Intent(LogInActivity.this, PCursoActivity.class);
+                            i.putExtra("id", id);
+                            startActivity(i);
+                        }else{
+                            Toast.makeText(LogInActivity.this,"Usuario/Contraseña incorrectos", Toast.LENGTH_SHORT).show();
                         }
                         break;
                     case 2:
                         if(daoP.logIn(id, contra)) {
-                            startActivity(new Intent(LogInActivity.this, AsesorActivity.class));
+                            Intent i = new Intent(LogInActivity.this, AsesorActivity.class);
+                            i.putExtra("id", id);
+                            startActivity(i);
+                        }else{
+                            Toast.makeText(LogInActivity.this,"Usuario/Contraseña incorrectos", Toast.LENGTH_SHORT).show();
                         }
                         break;
                     case 3:
                         Encargado encargado = new Encargado();
                         if(id.equals(encargado.getUsuario()) && contra.equals(encargado.getContrasena())) {
                             startActivity(new Intent(LogInActivity.this, EncargadoActivity.class));
+                        }else{
+                            Toast.makeText(LogInActivity.this,"Usuario/Contraseña incorrectos", Toast.LENGTH_SHORT).show();
                         }
                         break;
                 }

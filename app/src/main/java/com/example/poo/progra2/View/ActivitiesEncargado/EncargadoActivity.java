@@ -40,7 +40,7 @@ public class EncargadoActivity extends AppCompatActivity {
                                 startActivity(new Intent(EncargadoActivity.this, RegistrarEmpresaActivity.class));
                                 break;
                             case R.id.nav_profC:
-                                startActivity(new Intent(EncargadoActivity.this, RegistrarProfCursoActivity.class));
+                                startActivity(new Intent(EncargadoActivity.this, RegistrarProfActivity.class));
                                 break;
                             case R.id.nav_periodo:
                                 startActivity(new Intent(EncargadoActivity.this, RegistrarPeriodoActivity.class));

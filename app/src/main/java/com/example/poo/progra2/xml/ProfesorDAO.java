@@ -34,9 +34,27 @@ public class ProfesorDAO extends DAO{
         }
     }
 
+    public Profesor buscarProfesor(String pCorreo){
+        for(int i = 0; i<profesores.size(); i++){
+            if(profesores.get(i).getEmail().equals(pCorreo)){
+                return profesores.get(i);
+            }
+        }
+        return null;
+    }
+
+    public boolean revisarRepetido(String pCorreo){
+        for(int i = 0; i<profesores.size(); i++){
+            if(profesores.get(i).getEmail().equals(pCorreo)){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public boolean logIn(String id, String contra){
         for(Profesor profesor:profesores){
-            if(profesor.getNombre().equals(id) && profesor.getContrasena().equals(contra)){
+            if(profesor.getEmail().equals(id) && profesor.getContrasena().equals(contra)){
                 return true;
             }
         }

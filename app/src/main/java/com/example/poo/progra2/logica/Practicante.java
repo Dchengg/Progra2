@@ -12,6 +12,7 @@ public class Practicante {
     private String correoProfCurso;
     private String correoProfAsesor;
     private String empresa;
+    private String correo;
     private ArrayList<Minuta> minutas = new ArrayList<Minuta>();
     private ArrayList<Entregable> entregables = new ArrayList<Entregable>();
 
@@ -19,7 +20,7 @@ public class Practicante {
 
     }
 
-    public Practicante(String pNombre, String pCarnet, String pContrasena, String pFecha, String pDir, String pCorreoProfAsesor, String pCorreoProfCurso, String pEmpresa) {
+    public Practicante(String pNombre, String pCarnet, String pContrasena, String pFecha, String pDir, String pCorreoProfAsesor, String pCorreoProfCurso, String pEmpresa, String pCorreo) {
         setNombre(pNombre);
         setCarnet(pCarnet);
         setContrasena(pContrasena);
@@ -28,6 +29,15 @@ public class Practicante {
         setCorreoProfAsesor(pCorreoProfAsesor);
         setCorreoProfCurso(pCorreoProfCurso);
         setEmpresa(pEmpresa);
+        setCorreo(pCorreo);
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
     public String getNombre() {

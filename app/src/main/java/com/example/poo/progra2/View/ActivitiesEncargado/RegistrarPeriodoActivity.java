@@ -57,7 +57,7 @@ public class RegistrarPeriodoActivity extends AppCompatActivity implements Adapt
                                 startActivity(new Intent(RegistrarPeriodoActivity.this, RegistrarEmpresaActivity.class));
                                 break;
                             case R.id.nav_profC:
-                                startActivity(new Intent(RegistrarPeriodoActivity.this, RegistrarProfCursoActivity.class));
+                                startActivity(new Intent(RegistrarPeriodoActivity.this, RegistrarProfActivity.class));
                                 break;
                             case R.id.nav_practicante:
                                 startActivity(new Intent(RegistrarPeriodoActivity.this, RegistrarPracticanteActivity.class));

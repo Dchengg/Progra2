@@ -55,8 +55,8 @@
             android:label="Consultar minutas"/>
         <activity android:name=".View.ActivitiesEncargado.EncargadoActivity"
             android:label="Bievenido Encargado"/>
-        <activity android:name=".View.ActivitiesEncargado.RegistrarProfCursoActivity"
-            android:label="Registrar profesor de curso"/>
+        <activity android:name=".View.ActivitiesEncargado.RegistrarProfActivity"
+            android:label="Registrar profesor"/>
         <activity android:name=".View.ActivitiesEncargado.RegistrarPeriodoActivity"
             android:label="Registrar periodo"/>
         <activity android:name=".View.ActivitiesEncargado.RegistrarEmpresaActivity"

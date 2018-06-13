@@ -19,7 +19,7 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?android:attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
             android:background="@android:color/transparent"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -36,55 +36,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0">
-
-                <Spinner
-                    android:id="@+id/spinner"
-                    android:layout_width="180dp"
-                    android:layout_height="29dp"
-                    android:layout_marginEnd="72dp"
-                    android:layout_marginStart="27dp"
-                    android:layout_marginTop="60dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView66"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView67"
-                    android:layout_width="181dp"
-                    android:layout_height="19dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Cantidad de entregables"
-                    android:textColor="@android:color/white"
-                    app:fontFamily="@font/aldrich"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView66" />
-
-                <Spinner
-                    android:id="@+id/spinner11"
-                    android:layout_width="99dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="14dp"
-                    android:spinnerMode="dropdown"
-                    app:layout_constraintStart_toEndOf="@+id/textView67"
-                    app:layout_constraintTop_toBottomOf="@+id/spinner" />
-
-                <TextView
-                    android:id="@+id/textView66"
-                    android:layout_width="89dp"
-                    android:layout_height="0dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="68dp"
-                    android:text="Periodo : "
-                    android:textColor="@android:color/white"
-                    android:textSize="18sp"
-                    app:fontFamily="@font/aldrich"
-                    app:layout_constraintEnd_toStartOf="@+id/spinner2"
-                    app:layout_constraintHorizontal_bias="0.364"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ScrollView
                     android:id="@+id/scrollView2"
@@ -458,6 +409,25 @@
                             </LinearLayout>
                         </HorizontalScrollView>
 
+                        <TextView
+                            android:id="@+id/textView66"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:text="Periodo : "
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            app:fontFamily="@font/aldrich"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="68dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="150dp"
+                            android:layout_height="29dp"
+                            android:spinnerMode="dialog"
+                            tools:layout_editor_absoluteX="27dp"
+                            tools:layout_editor_absoluteY="60dp" />
+
                         <Button
                             android:id="@+id/crear_button"
                             android:layout_width="72dp"
@@ -474,6 +444,7 @@
             </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>
     </FrameLayout>
+
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

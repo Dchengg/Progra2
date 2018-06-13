@@ -16,10 +16,9 @@ import android.widget.Toast;
 
 import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
-import com.example.poo.progra2.logica.Profesor;
 import com.example.poo.progra2.xml.ProfesorDAO;
 
-public class RegistrarProfCursoActivity extends AppCompatActivity {
+public class RegistrarProfActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
     private ProfesorDAO dao;
@@ -27,7 +26,7 @@ public class RegistrarProfCursoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registrar_prof_curso);
+        setContentView(R.layout.activity_registrar_prof);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
@@ -44,22 +43,22 @@ public class RegistrarProfCursoActivity extends AppCompatActivity {
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()) {
                             case R.id.nav_inicio:
-                                startActivity(new Intent(RegistrarProfCursoActivity.this, EncargadoActivity.class));
+                                startActivity(new Intent(RegistrarProfActivity.this, EncargadoActivity.class));
                                 break;
                             case R.id.nav_empresa:
-                                startActivity(new Intent(RegistrarProfCursoActivity.this, RegistrarEmpresaActivity.class));
+                                startActivity(new Intent(RegistrarProfActivity.this, RegistrarEmpresaActivity.class));
                                 break;
                             case R.id.nav_periodo:
-                                startActivity(new Intent(RegistrarProfCursoActivity.this, RegistrarPeriodoActivity.class));
+                                startActivity(new Intent(RegistrarProfActivity.this, RegistrarPeriodoActivity.class));
                                 break;
                             case R.id.nav_practicante:
-                                startActivity(new Intent(RegistrarProfCursoActivity.this, RegistrarPracticanteActivity.class));
+                                startActivity(new Intent(RegistrarProfActivity.this, RegistrarPracticanteActivity.class));
                                 break;
                             case R.id.nav_calendario:
-                                startActivity(new Intent(RegistrarProfCursoActivity.this, CrearCalendarioActivity.class));
+                                startActivity(new Intent(RegistrarProfActivity.this, CrearCalendarioActivity.class));
                                 break;
                             case R.id.nav_log_out:
-                                startActivity(new Intent(RegistrarProfCursoActivity.this, LogInActivity.class));
+                                startActivity(new Intent(RegistrarProfActivity.this, LogInActivity.class));
                                 break;
                         }
                         return true;
@@ -74,9 +73,15 @@ public class RegistrarProfCursoActivity extends AppCompatActivity {
                 String telefono = telefonoField.getText().toString();
                 EditText correoField = findViewById(R.id.editText4);
                 String correo = correoField.getText().toString();
+                EditText contraField = findViewById(R.id.editText1122);
+                String contra = contraField.getText().toString();
                 dao = new ProfesorDAO(getApplicationContext());
-                dao.registrarProfesor(nombre, correo, telefono, telefono);
-                Toast.makeText(RegistrarProfCursoActivity.this,"Profesor registrado", Toast.LENGTH_SHORT).show();
+                if(dao.revisarRepetido(correo)){
+                    Toast.makeText(RegistrarProfActivity.this,"Error: Profesor ya registrado", Toast.LENGTH_SHORT).show();
+                }else {
+                    dao.registrarProfesor(nombre, correo, telefono, contra);
+                    Toast.makeText(RegistrarProfActivity.this, "Profesor registrado", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

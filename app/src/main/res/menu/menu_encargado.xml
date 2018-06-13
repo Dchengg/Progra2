@@ -6,16 +6,11 @@
             android:title="Inicio"
             />
         <item
-            android:id="@+id/nav_profA"
-            android:title="Registrar profesor asesor"
-            />
-        <item
             android:id="@+id/nav_empresa"
             android:title="Registar empresa" />
         <item
             android:id="@+id/nav_profC"
-            android:title="Registrar profesor de curso"
-            />
+            android:title="Registrar profesor" />
         <item
             android:id="@+id/nav_periodo"
             android:title="Registrar periodo de práctica"

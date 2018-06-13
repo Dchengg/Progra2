@@ -8,15 +8,21 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
+import com.example.poo.progra2.logica.Practicante;
+import com.example.poo.progra2.xml.PeriodoDAO;
+import com.example.poo.progra2.xml.PracticanteDAO;
 
 public class PracticanteActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
+    private PracticanteDAO dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +34,24 @@ public class PracticanteActivity extends AppCompatActivity {
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.menu);
         mDrawerLayout = findViewById(R.id.drawer_layout);
+        dao = new PracticanteDAO(getApplicationContext());
+        Bundle b = getIntent().getExtras();
+        String id = b.getString("id");
+        Practicante p = dao.buscarPracticante(id);
+        String profA = p.getCorreoProfAsesor();
+        String profC = p.getCorreoProfCurso();
+        String correo = p.getCorreo();
+        String emp = p.getEmpresa();
+        TextView t = (TextView)findViewById(R.id.textView4);
+        t.setText(id);
+        TextView t2 = (TextView)findViewById(R.id.textView68);
+        t2.setText(profA);
+        TextView t3 = (TextView)findViewById(R.id.textView69);
+        t3.setText(profC);
+        TextView t4 = (TextView)findViewById(R.id.textView70);
+        t4.setText(emp);
+        TextView t5 = (TextView)findViewById(R.id.textView37);
+        t5.setText(correo);
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(

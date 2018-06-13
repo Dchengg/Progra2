@@ -17,7 +17,6 @@ import android.widget.Toast;
 import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
 import com.example.poo.progra2.xml.EmpresaDAO;
-import com.example.poo.progra2.xml.ProfesorDAO;
 
 public class RegistrarEmpresaActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
@@ -48,7 +47,7 @@ public class RegistrarEmpresaActivity extends AppCompatActivity {
                                 startActivity(new Intent(RegistrarEmpresaActivity.this, EncargadoActivity.class));
                                 break;
                             case R.id.nav_profC:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarProfCursoActivity.class));
+                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarProfActivity.class));
                                 break;
                             case R.id.nav_periodo:
                                 startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarPeriodoActivity.class));

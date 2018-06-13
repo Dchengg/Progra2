@@ -31,7 +31,6 @@ public class CrearCalendarioActivity extends AppCompatActivity implements Adapte
     private Toolbar toolbar;
     private PeriodoDAO dao;
     String[] responsables = {"Profesor de Curso", "Profesor Asesor"};
-    String[] cantidad = {"1", "2", "3", "4", "5"};
     ArrayList<Periodo> periodos = PeriodoDAO.periodos;
     String[] periodo = {};
 
@@ -39,6 +38,12 @@ public class CrearCalendarioActivity extends AppCompatActivity implements Adapte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_calendario);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setDisplayHomeAsUpEnabled(true);
+        actionbar.setHomeAsUpIndicator(R.drawable.menu);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
         arrayPeriodo();
         final Spinner periodoSpinner = (Spinner) findViewById(R.id.spinner);
         periodoSpinner.setOnItemSelectedListener(this);
@@ -60,16 +65,6 @@ public class CrearCalendarioActivity extends AppCompatActivity implements Adapte
         final Spinner usuarios5 = (Spinner) findViewById(R.id.textView36);
         usuarios5.setOnItemSelectedListener(this);
         usuarios5.setAdapter(aa);
-        final Spinner cant = (Spinner) findViewById(R.id.spinner11);
-        cant.setOnItemSelectedListener(this);
-        ArrayAdapter af = new ArrayAdapter(this, android.R.layout.simple_spinner_item, cantidad);
-        usuarios5.setAdapter(af);
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ActionBar actionbar = getSupportActionBar();
-        actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.drawable.menu);
-        mDrawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
@@ -85,7 +80,7 @@ public class CrearCalendarioActivity extends AppCompatActivity implements Adapte
                                 startActivity(new Intent(CrearCalendarioActivity.this, RegistrarEmpresaActivity.class));
                                 break;
                             case R.id.nav_profC:
-                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarProfCursoActivity.class));
+                                startActivity(new Intent(CrearCalendarioActivity.this, RegistrarProfActivity.class));
                                 break;
                             case R.id.nav_periodo:
                                 startActivity(new Intent(CrearCalendarioActivity.this, RegistrarPeriodoActivity.class));
