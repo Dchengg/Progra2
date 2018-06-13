@@ -70,6 +70,7 @@ public class ProfesorDAO extends DAO{
 
     public void parseXml(){
         try {
+            profesores.clear();
             FileInputStream fileInputStream = new FileInputStream(file);
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
             XmlPullParser parser = factory.newPullParser();

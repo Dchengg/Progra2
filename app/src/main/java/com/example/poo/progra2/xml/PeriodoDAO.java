@@ -43,7 +43,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 
 import java.util.ArrayList;
-
+import java.util.Calendar;
 
 
 public class PeriodoDAO extends DAO {
@@ -103,6 +103,7 @@ public class PeriodoDAO extends DAO {
     public void parseXml() {
 
         try {
+            periodos.clear();
             FileInputStream fileInputStream = new FileInputStream(file);
 
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -117,7 +118,6 @@ public class PeriodoDAO extends DAO {
 
             while (eventType != XmlPullParser.END_DOCUMENT) {
                 String tag = parser.getName();
-                Log.d("testing","tag : " + tag);
 
                 switch (eventType) {
 
@@ -185,6 +185,8 @@ public class PeriodoDAO extends DAO {
 
     public void leerCalendario(XmlPullParser parser, Periodo periodo) throws  XmlPullParserException,IOException{
 
+        Calendario calendario = new Calendario();
+        periodo.setCalendario(calendario);
         Entregable entregable = null;
 
         String tag = parser.getName();
@@ -211,6 +213,11 @@ public class PeriodoDAO extends DAO {
 
                         }
 
+                    }
+                case XmlPullParser.END_TAG:
+                    if(tag.equalsIgnoreCase("entregable") && entregable != null){
+                        Log.d("PeriodoDao","Entregable agregado a la lista");
+                        calendario.agregarEntregable(entregable);
                     }
             }
             eventType = parser.next();
