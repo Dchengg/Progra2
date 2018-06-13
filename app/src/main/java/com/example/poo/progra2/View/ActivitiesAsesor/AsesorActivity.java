@@ -31,10 +31,13 @@ public class AsesorActivity extends AppCompatActivity {
         String id = b.getString("id");
         Profesor p = dao.buscarProfesor(id);
         String nombre = p.getNombre();
+        String tel = p.getTelefono();
         TextView t = (TextView)findViewById(R.id.textView73);
         t.setText(id);
         TextView t2 = (TextView)findViewById(R.id.textView58);
         t2.setText(nombre);
+        TextView t3 = (TextView)findViewById(R.id.textView74);
+        t3.setText(tel);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
