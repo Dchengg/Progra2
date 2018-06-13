@@ -9,13 +9,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
+import com.example.poo.progra2.xml.EmpresaDAO;
+import com.example.poo.progra2.xml.ProfesorDAO;
 
 public class RegistrarEmpresaActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
+    private EmpresaDAO dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +34,7 @@ public class RegistrarEmpresaActivity extends AppCompatActivity {
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.menu);
         mDrawerLayout = findViewById(R.id.drawer_layout);
+        dao = new EmpresaDAO(getApplicationContext());
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(
@@ -38,9 +46,6 @@ public class RegistrarEmpresaActivity extends AppCompatActivity {
                         switch (item.getItemId()) {
                             case R.id.nav_inicio:
                                 startActivity(new Intent(RegistrarEmpresaActivity.this, EncargadoActivity.class));
-                                break;
-                            case R.id.nav_profA:
-                                startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarAsesor.class));
                                 break;
                             case R.id.nav_profC:
                                 startActivity(new Intent(RegistrarEmpresaActivity.this, RegistrarProfCursoActivity.class));
@@ -61,6 +66,24 @@ public class RegistrarEmpresaActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+        Button button = (Button) findViewById(R.id.button_register);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                EditText nombreField = findViewById(R.id.editText14);
+                String nombre = nombreField.getText().toString();
+                EditText telefonoField = findViewById(R.id.editText19);
+                String telefono = telefonoField.getText().toString();
+                EditText direccionField = findViewById(R.id.editText20);
+                String direccion = direccionField.getText().toString();
+                EditText nombreSupField = findViewById(R.id.editText27);
+                String nombreSup = nombreSupField.getText().toString();
+                EditText correoField = findViewById(R.id.editText25);
+                String correo = correoField.getText().toString();
+                String supervisor = nombreSup+","+correo;
+                dao.agregarEmpresa(nombre, direccion, telefono, supervisor);
+                Toast.makeText(RegistrarEmpresaActivity.this,"Empresa registrada", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -73,5 +96,10 @@ public class RegistrarEmpresaActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+    @Override
+    public void onPause(){
+        super.onPause();
+        dao.writeXml();
     }
 }

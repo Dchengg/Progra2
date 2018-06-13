@@ -13,7 +13,6 @@ public class Entregable {
 
     public Entregable(String pTitulo,String pDescripcion,String pFechaDeEntrega,boolean pElectronico){
         setTitulo(pTitulo);
-        setTitulo(pTitulo);
         setDescripcion(pDescripcion);
         setFechaDeEntrega(pFechaDeEntrega);
         setElectronico(pElectronico);

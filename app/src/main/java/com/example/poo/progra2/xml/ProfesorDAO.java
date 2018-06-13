@@ -27,9 +27,10 @@ public class ProfesorDAO extends DAO{
         }else{
             fileName = "profesores.xml";
             file =  new File(context.getFileStreamPath(fileName).getPath());
+             if(!file.exists()){
+                writeXml();
+            }
             Log.d("ProfesoresDao", context.getFileStreamPath(fileName).getPath());
-            //Profesor nuevo = new Profesor("Susana", "susasna@gmail.com","8746512354","susanaRules");
-            //profesores.add(nuevo);
         }
     }
 
@@ -40,6 +41,12 @@ public class ProfesorDAO extends DAO{
             }
         }
         return false;
+    }
+    public void registrarProfesor(String pNombre, String pCorreo, String pTel, String pContra){
+        Profesor nuevo =  new Profesor(pNombre,pCorreo,pTel,pContra);
+        profesores.add(nuevo);
+        Log.d("ProfesorDAO","Profesor " + nuevo.getNombre()+" agregado");
+
     }
 
 
@@ -93,6 +100,7 @@ public class ProfesorDAO extends DAO{
             XmlSerializer xmlSerializer  = Xml.newSerializer();
             StringWriter writer = new StringWriter();
             xmlSerializer.setOutput(writer);
+            xmlSerializer.setFeature("http://xmlpull.org/v1/doc/features.html#indent-output", true);
             xmlSerializer.startDocument("UTF-8", true);
             xmlSerializer.startTag(null,"root");
             for(Profesor profesor:profesores){

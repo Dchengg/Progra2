@@ -36,9 +36,6 @@ public class EncargadoActivity extends AppCompatActivity {
                         item.setChecked(true);
                         mDrawerLayout.closeDrawers();
                         switch (item.getItemId()) {
-                            case R.id.nav_profA:
-                                startActivity(new Intent(EncargadoActivity.this, RegistrarAsesor.class));
-                                break;
                             case R.id.nav_empresa:
                                 startActivity(new Intent(EncargadoActivity.this, RegistrarEmpresaActivity.class));
                                 break;

@@ -3,7 +3,7 @@ package com.example.poo.progra2.logica;
 public class Periodo {
     private String semestre;
     private String ano;
-    private Calendario calendario;
+    private Calendario calendario = null;
 
     public Periodo(){
 

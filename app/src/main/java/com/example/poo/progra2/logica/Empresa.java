@@ -5,9 +5,13 @@ public class Empresa {
     private String nombre;
     private String direccion;
     private String telefono;
-    private Supervisor supervisor;
+    private String supervisor;
 
-    public Empresa(String pNombre, String pDir, String pTel, Supervisor pSup){
+    public Empresa(){
+
+    }
+
+    public Empresa(String pNombre, String pDir, String pTel, String pSup){
         setNombre(pNombre);
         setDireccion(pDir);
         setTelefono(pTel);
@@ -38,11 +42,21 @@ public class Empresa {
         this.telefono = telefono;
     }
 
-    public Supervisor getSupervisor() {
+    public String getSupervisor() {
         return supervisor;
     }
 
-    public void setSupervisor(Supervisor supervisor) {
+    public void setSupervisor(String supervisor) {
         this.supervisor = supervisor;
+    }
+
+    public String getCorreoSupervisor(){
+        String[] output = supervisor.split(";");
+        return output[0];
+    }
+
+    public String getNombreSupervisor(){
+        String[] output = supervisor.split(";");
+        return output[1];
     }
 }

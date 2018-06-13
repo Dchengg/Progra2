@@ -38,260 +38,322 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0">
 
-                    <Spinner
-                        android:id="@+id/editText10"
-                        android:layout_width="70dp"
-                        android:layout_height="30dp"
-                        android:layout_marginBottom="16dp"
-                        android:layout_marginStart="76dp"
-                        app:layout_constraintBottom_toTopOf="@+id/textView7"
-                        app:layout_constraintStart_toStartOf="parent" />
-
-                    <EditText
-                        android:id="@+id/textField7"
-                        android:layout_width="246dp"
-                        android:layout_height="35dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="20dp"
-                        android:ems="10"
-                        android:fontFamily="@font/aldrich"
-                        android:inputType="text"
-                        android:lineSpacingExtra="14sp"
-                        android:textColor="@android:color/white"
+                    <ScrollView
+                        android:layout_width="378dp"
+                        android:layout_height="536dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="54dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView7"
-                        app:layout_constraintVertical_bias="0.0" />
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <Spinner
-                        android:id="@+id/editText5"
-                        android:layout_width="70dp"
-                        android:layout_height="30dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="60dp"
-                        app:layout_constraintBottom_toTopOf="@+id/textView7"
-                        app:layout_constraintStart_toEndOf="@+id/editText10"
-                        app:layout_constraintTop_toBottomOf="@+id/contraTextField" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
 
-                    <Spinner
-                        android:id="@+id/editText9"
-                        android:layout_width="70dp"
-                        android:layout_height="30dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="68dp"
-                        app:layout_constraintBottom_toTopOf="@+id/textView7"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0"
-                        app:layout_constraintStart_toEndOf="@+id/editText5"
-                        app:layout_constraintTop_toBottomOf="@+id/contraTextField"
-                        app:layout_constraintVertical_bias="0.0" />
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="84dp"
+                                android:text="Nombre"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
 
-                    <EditText
-                        android:id="@+id/contraTextField"
-                        android:layout_width="246dp"
-                        android:layout_height="35dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="20dp"
-                        android:ems="10"
-                        android:fontFamily="@font/aldrich"
-                        android:inputType="number"
-                        android:textColor="@android:color/white"
-                        android:textSize="14sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.363"
-                        app:layout_constraintStart_toEndOf="@+id/textView5"
-                        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                            <EditText
+                                android:id="@+id/editText29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:ems="10"
+                                android:inputType="text"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
-                    <TextView
-                        android:id="@+id/textView7"
-                        android:layout_width="157dp"
-                        android:layout_height="16dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="60dp"
-                        android:text="Correo electronico"
-                        android:textColor="@android:color/white"
-                        android:textSize="15sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.037"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:text="Telefono"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-                    <EditText
-                        android:id="@+id/editText2"
-                        android:layout_width="246dp"
-                        android:layout_height="35dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="20dp"
-                        android:ems="10"
-                        android:fontFamily="@font/aldrich"
-                        android:inputType="number"
-                        android:textColor="@android:color/white"
-                        android:textSize="14sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.618"
-                        app:layout_constraintStart_toEndOf="@+id/textView4"
-                        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+                            <EditText
+                                android:id="@+id/editText28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:ems="10"
+                                android:inputType="phone"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="158dp"
-                        android:layout_height="33dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
-                        android:text="Fecha de nacimiento"
-                        android:textColor="@android:color/white"
-                        android:textSize="15sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:text="Carnet"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="73dp"
-                        android:layout_height="27dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
-                        android:text="Cedula"
-                        android:textColor="@android:color/white"
-                        android:textSize="15sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                            <EditText
+                                android:id="@+id/editText30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:ems="10"
+                                android:inputType="number"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
-                        android:text="Carnet"
-                        android:textColor="@android:color/white"
-                        android:textSize="14sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:text="Cedula"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-                    <EditText
-                        android:id="@+id/editText6"
-                        android:layout_width="246dp"
-                        android:layout_height="35dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="84dp"
-                        android:ems="10"
-                        android:fontFamily="@font/aldrich"
-                        android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textSize="14sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.543"
-                        app:layout_constraintStart_toEndOf="@+id/textView3"
-                        app:layout_constraintTop_toTopOf="parent" />
+                            <EditText
+                                android:id="@+id/editText31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:ems="10"
+                                android:inputType="number"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
-                    <EditText
-                        android:id="@+id/idTextField"
-                        android:layout_width="246dp"
-                        android:layout_height="35dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="20dp"
-                        android:ems="10"
-                        android:fontFamily="@font/aldrich"
-                        android:inputType="number"
-                        android:textColor="@android:color/white"
-                        android:textSize="14sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.363"
-                        app:layout_constraintStart_toEndOf="@+id/textView12"
-                        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:text="Fecha de nacimiento"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="25dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="84dp"
-                        android:text="Nombre"
-                        android:textColor="@android:color/white"
-                        android:textSize="15sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                            <EditText
+                                android:id="@+id/editText32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:ems="10"
+                                android:inputType="date"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="73dp"
-                        android:layout_height="22dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
-                        android:text="Telefono"
-                        android:textColor="@android:color/white"
-                        android:textSize="15sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="32dp"
+                                android:text="Dirección"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="75dp"
-                        android:layout_height="22dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="32dp"
-                        android:text="Dirección"
-                        android:textColor="@android:color/white"
-                        android:textSize="15sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                            <EditText
+                                android:id="@+id/editText33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:ems="10"
+                                android:inputType="text"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
-                    <EditText
-                        android:id="@+id/editText4"
-                        android:layout_width="246dp"
-                        android:layout_height="35dp"
-                        android:layout_marginEnd="28dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="20dp"
-                        android:ems="10"
-                        android:fontFamily="@font/aldrich"
-                        android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textSize="14sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.909"
-                        app:layout_constraintStart_toEndOf="@+id/textView13"
-                        app:layout_constraintTop_toBottomOf="@+id/idTextField" />
+                            <TextView
+                                android:id="@+id/textView64"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="84dp"
+                                android:text="Periodo"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
 
-                    <Button
-                        android:id="@+id/button"
-                        android:layout_width="100dp"
-                        android:layout_height="51dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:backgroundTint="@android:color/transparent"
-                        android:text="Registrar"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.971"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textField7"
-                        app:layout_constraintVertical_bias="0.019" />
+                            <Spinner
+                                android:id="@+id/editText3623"
+                                android:layout_width="222dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="84dp"
+                                android:text="Profesor curso"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Spinner
+                                android:id="@+id/editText34"
+                                android:layout_width="203dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:id="@+id/textView63"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="84dp"
+                                android:text="Empresa"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Spinner
+                                android:id="@+id/editText1029"
+                                android:layout_width="212dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:id="@+id/textView62"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="84dp"
+                                android:text="Profesor asesor"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Spinner
+                                android:id="@+id/editText3"
+                                android:layout_width="203dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="60dp"
+                                android:text="Correo electronico"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                app:fontFamily="@font/aldrich"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.037"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                            <EditText
+                                android:id="@+id/editText35"
+                                android:layout_width="201dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:inputType="textEmailAddress" />
+
+                            <Button
+                                android:id="@+id/button123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="51dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:text="Registrar"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.971"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textField7"
+                                app:layout_constraintVertical_bias="0.019" />
+
+                        </LinearLayout>
+                    </ScrollView>
 
                 </android.support.constraint.ConstraintLayout>
             </android.support.constraint.ConstraintLayout>
         </FrameLayout>
-
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
@@ -301,8 +363,6 @@
         android:fitsSystemWindows="true"
         android:visibility="visible"
         app:itemTextColor="@android:color/white"
-        app:menu="@menu/menu_encargado">
-
-    </android.support.design.widget.NavigationView>
+        app:menu="@menu/menu_encargado" />
 
 </android.support.v4.widget.DrawerLayout>

@@ -9,13 +9,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.poo.progra2.View.LogInActivity;
 import com.example.poo.progra2.R;
+import com.example.poo.progra2.logica.Profesor;
+import com.example.poo.progra2.xml.ProfesorDAO;
 
 public class RegistrarProfCursoActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Toolbar toolbar;
+    private ProfesorDAO dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +46,6 @@ public class RegistrarProfCursoActivity extends AppCompatActivity {
                             case R.id.nav_inicio:
                                 startActivity(new Intent(RegistrarProfCursoActivity.this, EncargadoActivity.class));
                                 break;
-                            case R.id.nav_profA:
-                                startActivity(new Intent(RegistrarProfCursoActivity.this, RegistrarAsesor.class));
-                                break;
                             case R.id.nav_empresa:
                                 startActivity(new Intent(RegistrarProfCursoActivity.this, RegistrarEmpresaActivity.class));
                                 break;
@@ -61,6 +65,20 @@ public class RegistrarProfCursoActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+        Button button = (Button) findViewById(R.id.button5);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                EditText nombreField = findViewById(R.id.editText6);
+                String nombre = nombreField.getText().toString();
+                EditText telefonoField = findViewById(R.id.textFieldTel);
+                String telefono = telefonoField.getText().toString();
+                EditText correoField = findViewById(R.id.editText4);
+                String correo = correoField.getText().toString();
+                dao = new ProfesorDAO(getApplicationContext());
+                dao.registrarProfesor(nombre, correo, telefono, telefono);
+                Toast.makeText(RegistrarProfCursoActivity.this,"Profesor registrado", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -73,5 +91,11 @@ public class RegistrarProfCursoActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        dao.writeXml();
     }
 }

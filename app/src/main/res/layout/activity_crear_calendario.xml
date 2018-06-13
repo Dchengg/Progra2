@@ -19,7 +19,7 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
             android:background="@android:color/transparent"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -32,297 +32,448 @@
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0">
+                app:layout_constraintVertical_bias="0.0">
 
-                <TableRow
-                    android:id="@+id/tableRow3"
-                    android:layout_width="368dp"
-                    android:layout_height="67dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
-                    android:orientation="vertical"
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="180dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="72dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="60dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tableRow6">
+                    app:layout_constraintStart_toEndOf="@+id/textView66"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <EditText
-                        android:id="@+id/textView21"
-                        android:layout_width="81dp"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/textView22"
-                        android:layout_width="65dp"
-                        android:layout_height="54dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="date"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/textView23"
-                        android:layout_width="70dp"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="number"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <Spinner
-                        android:id="@+id/textView24"
-                        android:layout_width="match_parent"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp" />
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/tableRow5"
-                    android:layout_width="368dp"
-                    android:layout_height="67dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
-                    android:orientation="vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tableRow4">
-
-                    <EditText
-                        android:id="@+id/textView25"
-                        android:layout_width="81dp"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/textView26"
-                        android:layout_width="65dp"
-                        android:layout_height="54dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="date"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/textView27"
-                        android:layout_width="70dp"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="number"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <Spinner
-                        android:id="@+id/textView28"
-                        android:layout_width="match_parent"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp" />
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/tableRow4"
-                    android:layout_width="368dp"
-                    android:layout_height="67dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="181dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:orientation="vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tableRow">
-
-                    <EditText
-                        android:id="@+id/textView29"
-                        android:layout_width="81dp"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/textView30"
-                        android:layout_width="65dp"
-                        android:layout_height="54dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="date"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/textView31"
-                        android:layout_width="70dp"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="number"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <Spinner
-                        android:id="@+id/textView32"
-                        android:layout_width="match_parent"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp" />
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/tableRow6"
-                    android:layout_width="368dp"
-                    android:layout_height="67dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
-                    android:orientation="vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tableRow5">
-
-                    <EditText
-                        android:id="@+id/textView33"
-                        android:layout_width="81dp"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="text"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/textView34"
-                        android:layout_width="65dp"
-                        android:layout_height="54dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="date"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/textView35"
-                        android:layout_width="70dp"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:inputType="number"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp" />
-
-                    <Spinner
-                        android:id="@+id/textView36"
-                        android:layout_width="match_parent"
-                        android:layout_height="53dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp" />
-                </TableRow>
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="108dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="@android:color/transparent"
-                    android:text="Crear"
+                    android:text="Cantidad de entregables"
                     android:textColor="@android:color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:fontFamily="@font/aldrich"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tableRow3"
-                    app:layout_constraintVertical_bias="0.573" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView66" />
 
-                <TableRow
-                    android:id="@+id/tableRow"
-                    android:layout_width="368dp"
-                    android:layout_height="39dp"
+                <Spinner
+                    android:id="@+id/spinner11"
+                    android:layout_width="99dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="14dp"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintStart_toEndOf="@+id/textView67"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="89dp"
+                    android:layout_height="0dp"
                     android:layout_marginEnd="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="71dp"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="68dp"
+                    android:text="Periodo : "
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/aldrich"
+                    app:layout_constraintEnd_toStartOf="@+id/spinner2"
+                    app:layout_constraintHorizontal_bias="0.364"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/textView41"
-                        android:layout_width="61dp"
-                        android:layout_height="22dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:text="Detalle"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintBottom_toTopOf="@+id/textView13"
-                        app:layout_constraintStart_toStartOf="parent" />
+                <ScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/textView42"
-                        android:layout_width="97dp"
-                        android:layout_height="28dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:text="Fecha de entrega"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintBottom_toTopOf="@+id/textView13"
-                        app:layout_constraintStart_toStartOf="parent" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/textView43"
-                        android:layout_width="wrap_content"
-                        android:layout_height="22dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:text="Porcentaje"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintBottom_toTopOf="@+id/textView13"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/textView44"
-                        android:layout_width="103dp"
-                        android:layout_height="35dp"
-                        android:layout_marginBottom="32dp"
-                        android:layout_marginStart="16dp"
-                        android:text="Responsable de nota"
-                        android:textColor="@android:color/white"
-                        android:textSize="12sp"
-                        app:fontFamily="@font/aldrich"
-                        app:layout_constraintBottom_toTopOf="@+id/textView13"
-                        app:layout_constraintStart_toStartOf="parent" />
-                </TableRow>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TableRow
+                                    android:id="@+id/tableRow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="144dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/textView65"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Electronico"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/aldrich" />
+
+                                    <TextView
+                                        android:id="@+id/textView41"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="22dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Detalle"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/aldrich"
+                                        app:layout_constraintBottom_toTopOf="@+id/textView13"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textView42"
+                                        android:layout_width="57dp"
+                                        android:layout_height="28dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Fecha de entrega"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/aldrich"
+                                        app:layout_constraintBottom_toTopOf="@+id/textView13"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textView43"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="22dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Porcentaje"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/aldrich"
+                                        app:layout_constraintBottom_toTopOf="@+id/textView13"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textView44"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="35dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="Responsable"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/aldrich"
+                                        app:layout_constraintBottom_toTopOf="@+id/textView13"
+                                        app:layout_constraintStart_toStartOf="parent" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/tableRow6">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <EditText
+                                        android:id="@+id/textView122"
+                                        android:layout_width="81dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="text"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView222"
+                                        android:layout_width="65dp"
+                                        android:layout_height="54dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="date"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textVieww"
+                                        android:layout_width="70dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="number"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/textView242"
+                                        android:layout_width="147dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow35"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <EditText
+                                        android:id="@+id/textView10"
+                                        android:layout_width="81dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="text"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView22"
+                                        android:layout_width="65dp"
+                                        android:layout_height="54dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="date"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView23"
+                                        android:layout_width="70dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="number"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/textView24"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/tableRow4">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <EditText
+                                        android:id="@+id/textView25"
+                                        android:layout_width="81dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="text"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView26"
+                                        android:layout_width="65dp"
+                                        android:layout_height="54dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="date"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView27"
+                                        android:layout_width="70dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="number"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/textView28"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="16dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <EditText
+                                        android:id="@+id/textView29"
+                                        android:layout_width="81dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="text"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView30"
+                                        android:layout_width="65dp"
+                                        android:layout_height="54dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="date"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView31"
+                                        android:layout_width="70dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="number"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/textView32"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:id="@+id/tableRow6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/tableRow5">
+
+                                    <CheckBox
+                                        android:id="@+id/checkBox3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <EditText
+                                        android:id="@+id/textView33"
+                                        android:layout_width="81dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="text"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView34"
+                                        android:layout_width="65dp"
+                                        android:layout_height="54dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="date"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <EditText
+                                        android:id="@+id/textView35"
+                                        android:layout_width="70dp"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp"
+                                        android:inputType="number"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="12sp" />
+
+                                    <Spinner
+                                        android:id="@+id/textView36"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="53dp"
+                                        android:layout_marginBottom="32dp"
+                                        android:layout_marginStart="16dp" />
+                                </TableRow>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <Button
+                            android:id="@+id/crear_button"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@android:color/transparent"
+                            android:text="Crear"
+                            android:textColor="@android:color/white"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="624dp" />
+
+                    </LinearLayout>
+                </ScrollView>
 
             </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>
     </FrameLayout>
-
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

@@ -105,26 +105,10 @@
                             android:layout_marginTop="8dp"
                             android:ems="10"
                             android:hint="Dirección de la empresa"
-                            android:inputType="textPersonName"
+                            android:inputType="text"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/editText19" />
-
-                        <EditText
-                            android:id="@+id/editText21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:ems="10"
-                            android:hint="Nombre del supervisor"
-                            android:inputType="textPersonName"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.503"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
                         <TextView
                             android:id="@+id/textView25"
@@ -176,8 +160,8 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:ems="10"
-                            android:hint="Dirección del supervisor"
-                            android:inputType="textPersonName"
+                            android:hint="Correo del supervisor"
+                            android:inputType="textEmailAddress"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.503"
                             app:layout_constraintStart_toStartOf="parent"
@@ -193,13 +177,13 @@
                             android:layout_marginTop="8dp"
                             android:ems="10"
                             android:hint="Puesto del supervisor"
-                            android:inputType="textPersonName"
+                            android:inputType="text"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/editText25" />
 
                         <Button
-                            android:id="@+id/button5"
+                            android:id="@+id/button_register"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
